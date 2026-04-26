@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descomplique — Rio Claro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+/* ============================================
+   DESCOMPLIQUE - CSS CUSTOMIZADO
+   Design: Geometria Humana
+   ============================================ */
+
+:root {
+    /* Cores principais */
+    --color-primary: #2D2952;
+    --color-accent: #39FF14;
+    --color-white: #FFFFFF;
+    --color-gray-light: #F5F5F5;
+    --color-gray-medium: #E0E0E0;
+    --color-text: #1A1A1A;
+    --color-text-light: #666666;
+    
+    /* Tipografia */
+    --font-display: 'Sora', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    
+    /* Espaçamento */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    
+    /* Transições */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 8px rgba(45, 41, 82, 0.08);
+    --shadow-md: 0 4px 16px rgba(45, 41, 82, 0.12);
+    --shadow-lg: 0 8px 32px rgba(45, 41, 82, 0.16);
+    
+    /* Border radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: var(--color-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ============================================
+   CONTAINER
+   ============================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+}
+
+h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.btn-primary {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    box-shadow: 0 4px 20px rgba(57, 255, 20, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(57, 255, 20, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-large {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem var(--spacing-md);
+}
+
+.logo {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+}
+
+.logo-text {
+    color: var(--color-primary);
+}
+
+.logo-dot {
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.nav-menu a {
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.nav-menu a:hover {
+    color: var(--color-accent);
+}
+
+.nav-cta {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    padding: 0.625rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(57, 255, 20, 0.3);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 3px;
+    background: var(--color-primary);
+    border-radius: 2px;
+    transition: var(--transition-normal);
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.hero-bg-shape {
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 600px;
+    height: 600px;
+    background: var(--color-accent);
+    opacity: 0.08;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    animation: morphing 20s infinite;
+}
+
+@keyframes morphing {
+    0%, 100% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+    50% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.hero-content {
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.hero-visual {
+    position: relative;
+    height: 500px;
+}
+
+.hero-blob {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #483D8B 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: blobFloat 6s infinite ease-in-out;
+}
+
+@keyframes blobFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   VALUE PROPOSITION
+   ============================================ */
+
+.value-prop {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-gray-light);
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.value-card {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.value-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.value-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.value-card p {
+    color: var(--color-text-light);
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
+.about {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+}
+
+.about-shape {
+    position: absolute;
+    bottom: 10%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: var(--color-accent);
+    opacity: 0.05;
+    border-radius: 50% 50% 30% 70% / 60% 40% 60% 40%;
+    z-index: -1;
+}
+
+.about-intro {
+    max-width: 900px;
+    margin: 0 auto var(--spacing-xl);
+    text-align: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+}
+
+.consultants {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.consultant-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: transform var(--transition-normal);
+}
+
+.consultant-card:hover {
+    transform: translateY(-8px);
+}
+
+.consultant-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--color-accent);
+    box-shadow: 0 8px 24px rgba(57, 255, 20, 0.2);
+}
+
+.consultant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.consultant-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.consultant-title {
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.125rem;
+}
+
+.consultant-bio {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+}
+
+/* ============================================
+   SOLUTIONS
+   ============================================ */
+
+.solutions {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-gray-light);
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.solution-card {
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 2px solid transparent;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.solution-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.solution-card.featured {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #483D8B 100%);
+    color: var(--color-white);
+}
+
+.solution-card.featured h3 {
+    color: var(--color-white);
+}
+
+.badge {
+    display: inline-block;
+    background: #FF0000;
+    color: var(--color-white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.solution-card h3 {
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+/* ============================================
+   TRAINING
+   ============================================ */
+
+.training {
+    padding: var(--spacing-xl) 0;
+}
+
+.training-methodology {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.training-methodology h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-white);
+}
+
+.methodology-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.method-step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto var(--spacing-sm);
+}
+
+.method-step h4 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+}
+
+.step-arrow {
+    font-size: 2rem;
+    color: var(--color-accent);
+}
+
+.training-programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.training-card {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border: 3px solid var(--color-gray-medium);
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.training-card.highlight {
+    border-color: var(--color-accent);
+}
+
+.training-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.training-duration {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background: var(--color-accent);
+    color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.training-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.training-audience {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.workshops h3 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.workshops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.workshop-item {
+    background: var(--color-gray-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-primary);
+    border: 2px solid transparent;
+    transition: all var(--transition-normal);
+}
+
+.workshop-item:hover {
+    border-color: var(--color-accent);
+    background: var(--color-white);
+    transform: translateY(-4px);
+}
+
+/* ============================================
+   DIFFERENTIALS
+   ============================================ */
+
+.differentials {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-gray-light);
+}
+
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.diff-card {
+    background: var(--color-white);
+    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    transition: all var(--transition-normal);
+}
+
+.diff-card:nth-child(4) {
+    padding-right: calc(var(--spacing-lg) + 1rem);
+}
+
+.diff-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.diff-number {
+    position: absolute;
+    top: -20px;
+    left: var(--spacing-md);
+    width: 60px;
+    height: 60px;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    box-shadow: 0 4px 16px rgba(57, 255, 20, 0.3);
+}
+
+.diff-card h3 {
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.diff-card .highlight {
+    color: var(--color-accent);
+}
+
+.diff-card p {
+    color: var(--color-text-light);
+}
+
+/* ============================================
+   TESTIMONIALS
+   ============================================ */
+
+.testimonials {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.testimonials .section-title {
+    color: var(--color-white);
+    text-align: center;
+}
+
+.testimonials-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all var(--transition-normal);
+}
+
+.testimonial-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.testimonial-text {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+}
+
+.testimonial-author {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.9375rem;
+}
+
+/* ============================================
+   CLIENTS
+   ============================================ */
+
+.clients {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-gray-light);
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.client-logo {
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-align: center;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+    min-height: 80px;
+}
+
+.client-logo:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+/* ============================================
+   BLOG
+   ============================================ */
+
+.blog {
+    padding: var(--spacing-xl) 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.blog-card {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.blog-card.coming-soon {
+    opacity: 0.7;
+}
+
+.blog-image {
+    height: 200px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #483D8B 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.coming-badge {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+}
+
+.blog-card h3 {
+    padding: var(--spacing-md);
+    color: var(--color-primary);
+    font-size: 1.125rem;
+}
+
+.blog-card p {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+}
+
+/* ============================================
+   CONTACT
+   ============================================ */
+
+.contact {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-gray-light);
+    position: relative;
+}
+
+.contact-shape {
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: var(--color-accent);
+    opacity: 0.05;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    z-index: 0;
+}
+
+.contact-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-intro {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-size: 1.125rem;
+    color: var(--color-primary);
+}
+
+.contact-item svg {
+    color: var(--color-accent);
+}
+
+.contact-item a {
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.contact-item a:hover {
+    color: var(--color-accent);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-brand .logo {
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-brand .logo-text {
+    color: var(--color-white);
+}
+
+.footer-tagline {
+    color: var(--color-accent);
+    font-size: 0.9375rem;
+}
+
+.footer-nav h4,
+.footer-social h4 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.footer-nav a,
+.footer-social a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color var(--transition-fast);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+    color: var(--color-accent);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-md);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+}
+
+/* ============================================
+   WHATSAPP FLOAT BUTTON
+   ============================================ */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: all var(--transition-normal);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--color-white);
+        flex-direction: column;
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all var(--transition-normal);
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-visual {
+        height: 300px;
+    }
+    
+    .hero-ctas {
+        flex-direction: column;
+    }
+    
+    .hero-ctas .btn {
+        width: 100%;
+    }
+    
+    .methodology-steps {
+        flex-direction: column;
+    }
+    
+    .step-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .consultants {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --spacing-lg: 2.5rem;
+        --spacing-xl: 3.5rem;
+    }
+    
+    .section-title {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .value-grid,
+    .solutions-grid,
+    .training-programs,
+    .workshops-grid,
+    .diff-grid,
+    .testimonials-slider,
+    .clients-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">des com plique</span><span class="logo-dot">.</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#treinamentos">Treinamentos</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato" class="nav-cta">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shape"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Descomplique a gestão de pessoas e negócios da sua empresa
+                </h1>
+                <p class="hero-subtitle">
+                    Consultoria especializada para pequenas e médias empresas | 20 anos de experiência | Rio Claro e região
+                </p>
+                <div class="hero-ctas">
+                    <a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site%20da%20Descomplique%20e%20gostaria%20de%20falar%20com%20um%20consultor." class="btn btn-primary" target="_blank" rel="noopener">
+                        Fale com um consultor
+                    </a>
+                    <a href="#solucoes" class="btn btn-secondary">
+                        Conheça nossas soluções
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-blob"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposta de Valor -->
+    <section class="value-prop" id="valor">
+        <div class="container">
+            <h2 class="section-title">Por que investir em gestão de pessoas?</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Redução de custos</h3>
+                    <p>Evita processos trabalhistas e gastos com rescisões desnecessárias</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Retenção de talentos</h3>
+                    <p>Equipe motivada, produtiva e eficiente</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                        </svg>
+                    </div>
+                    <h3>Processos estruturados</h3>
+                    <p>Empresas de sucesso têm processos bem definidos</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Estratégia validada</h3>
+                    <p>Técnicas comprovadas, não intuição ou improviso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="sobre">
+        <div class="about-shape"></div>
+        <div class="container">
+            <div class="about-intro">
+                <h2 class="section-title">Empresas são feitas de pessoas e para pessoas</h2>
+                <div class="about-text">
+                    <p>Nossa missão é aprimorar a estratégia em pessoas e negócios das pequenas e médias empresas. Trazemos as melhores práticas do mercado para sua empresa de forma personalizada, facilitando seu dia a dia, otimizando recursos e melhorando resultados.</p>
+                    <p>Com 20 anos de experiência em gestão de empresas, conhecemos na prática os principais desafios. A competitividade do mercado exige gestão cada vez mais profissional e estratégica. Não dá para improvisar.</p>
+                </div>
+            </div>
+            
+            <div class="consultants">
+                <div class="consultant-card">
+                    <div class="consultant-image">
+                        <img src="jacqueline.jpg" alt="Jacqueline Boriam Beloni - Consultora Principal">
+                    </div>
+                    <h3>Jacqueline Boriam Beloni</h3>
+                    <p class="consultant-title">Especialista em Gestão de Negócios, Inovação e Pessoas</p>
+                    <p class="consultant-bio">Economista (UNESP), com MBA em Gestão de Negócios (USP), MBA em Digital Business (USP) e Especialização em Psicologia Organizacional e Gestão de Pessoas (PUC-RS). Mais de 15 anos de experiência em gestão empresarial e inovação. Sólida trajetória no SEBRAE-SP, acompanhando mais de 5 mil empresas.</p>
+                </div>
+                
+                <div class="consultant-card">
+                    <div class="consultant-image">
+                        <img src="pablo.jpg" alt="Pablo Nascimento Beloni - Consultor Principal">
+                    </div>
+                    <h3>Pablo Nascimento Beloni</h3>
+                    <p class="consultant-title">Especialista em Gestão de Pessoas e Negócios</p>
+                    <p class="consultant-bio">Mestrando em Administração (UNICAMP), Gestor de RH, Psicanalista, Psicopedagogo, Professor Universitário, Palestrante e Mentor. Experiência de 20 anos em Recursos Humanos e Desenvolvimento Humano. Treinou mais de 1000 profissionais, com mais de 10 mil horas de treinamentos e aulas aplicadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções -->
+    <section class="solutions" id="solucoes">
+        <div class="container">
+            <h2 class="section-title">Como podemos ajudar sua empresa</h2>
+            <div class="solutions-grid">
+                <div class="solution-card featured">
+                    <span class="badge">EM ALTA</span>
+                    <h3>Programas de treinamento para Liderança e equipes</h3>
+                </div>
+                <div class="solution-card featured">
+                    <span class="badge">EM ALTA</span>
+                    <h3>Plano de Cargos e Salários</h3>
+                </div>
+                <div class="solution-card featured">
+                    <span class="badge">EM ALTA</span>
+                    <h3>Avaliação de Desempenho</h3>
+                </div>
+                <div class="solution-card featured">
+                    <span class="badge">EM ALTA</span>
+                    <h3>Pesquisa e Gestão de Clima Organizacional</h3>
+                </div>
+                <div class="solution-card featured">
+                    <span class="badge">EM ALTA</span>
+                    <h3>Gestão por Competências</h3>
+                </div>
+                <div class="solution-card featured">
+                    <span class="badge">EM ALTA</span>
+                    <h3>Assessoria e desenvolvimento da equipe interna de RH</h3>
+                </div>
+                <div class="solution-card featured">
+                    <span class="badge">EM ALTA</span>
+                    <h3>Treinamento de Líderes com foco na nova NR-1</h3>
+                </div>
+                <div class="solution-card featured">
+                    <span class="badge">EM ALTA</span>
+                    <h3>Apoio na estruturação de projetos e cultura de inovação</h3>
+                </div>
+                <div class="solution-card">
+                    <h3>Aprimoramento do processo de Recrutamento e Seleção</h3>
+                </div>
+                <div class="solution-card">
+                    <h3>Revisão das políticas de RH e Departamento Pessoal</h3>
+                </div>
+                <div class="solution-card">
+                    <h3>Implantação de indicadores de Gestão de Pessoas</h3>
+                </div>
+                <div class="solution-card">
+                    <h3>Revisão das descrições e responsabilidades dos cargos</h3>
+                </div>
+                <div class="solution-card">
+                    <h3>Ações para melhoria da comunicação e fluxo entre setores</h3>
+                </div>
+                <div class="solution-card">
+                    <h3>Palestras para colaboradores sobre temas diversos</h3>
+                </div>
+                <div class="solution-card">
+                    <h3>Revisão e aprimoramento de processos internos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treinamentos -->
+    <section class="training" id="treinamentos">
+        <div class="container">
+            <h2 class="section-title">Portfólio de Treinamentos</h2>
+            
+            <div class="training-methodology">
+                <h3>Nossa metodologia moderna e eficaz</h3>
+                <div class="methodology-steps">
+                    <div class="method-step">
+                        <div class="step-number">1</div>
+                        <h4>Teoria</h4>
+                        <p>Apresentação dos conceitos teóricos sobre os temas abordados</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="method-step">
+                        <div class="step-number">2</div>
+                        <h4>Dinâmicas e Ferramentas Práticas</h4>
+                        <p>Aplicação prática dos conceitos com ferramentas para o dia a dia</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="method-step">
+                        <div class="step-number">3</div>
+                        <h4>Reflexão e Ação</h4>
+                        <p>Autoavaliação e aplicação prática dos conceitos apresentados</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="training-programs">
+                <div class="training-card highlight">
+                    <span class="training-duration">24h</span>
+                    <h3>Liderança na Prática</h3>
+                    <p class="training-audience">Para líderes operacionais e futuros líderes</p>
+                    <p>Liderança, comunicação, gestão de processos e inteligência emocional aplicados ao dia a dia.</p>
+                </div>
+
+                <div class="training-card highlight">
+                    <span class="training-duration">16h</span>
+                    <h3>Liderança Descomplicada</h3>
+                    <p class="training-audience">Para gerentes, coordenadores e supervisores</p>
+                    <p>Assessment comportamental + liderança de equipes + gestão de processos estratégicos.</p>
+                </div>
+
+                <div class="training-card highlight">
+                    <span class="training-duration">6h</span>
+                    <h3>Descomplique Carreira</h3>
+                    <p class="training-audience">Para profissionais em linha de sucessão</p>
+                    <p>Análise de perfil comportamental + PDI personalizado para crescimento profissional.</p>
+                </div>
+            </div>
+
+            <div class="workshops">
+                <h3>Workshops (4h cada)</h3>
+                <div class="workshops-grid">
+                    <div class="workshop-item">Habilidades Comportamentais</div>
+                    <div class="workshop-item">Comunicação Descomplicada</div>
+                    <div class="workshop-item">Gestão de Conflitos e Cooperação</div>
+                    <div class="workshop-item">Inteligência Emocional</div>
+                    <div class="workshop-item">Estratégias de Negociação (8h)</div>
+                    <div class="workshop-item">Gestão do Tempo e Produtividade</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="differentials" id="diferenciais">
+        <div class="container">
+            <h2 class="section-title">Por que escolher a Descomplique?</h2>
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <div class="diff-number">01</div>
+                    <h3>Equipe <span class="highlight">ESPECIALISTA</span></h3>
+                    <p>Especialistas em gestão de pessoas em médias e pequenas empresas. Colocamos a mão na massa para o resultado acontecer.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">02</div>
+                    <h3>Investimento <span class="highlight">JUSTO</span></h3>
+                    <p>Compatível com a capacidade de investimento das PMEs</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">03</div>
+                    <h3>Consultoria <span class="highlight">MODERNA</span></h3>
+                    <p>As melhores e mais recentes práticas de RH do mercado</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">04</div>
+                    <h3>Projetos <span class="highlight">PERSONALIZADOS</span></h3>
+                    <p>Construímos a solução que sua empresa precisa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Foi um treinamento muito útil não só para o crescimento profissional, mas também para o pessoal. A didática do professor é muito boa."</p>
+                    <p class="testimonial-author">— Supervisor, Ecoprimos</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Foi gratificante e com certeza sai modificada e motivada."</p>
+                    <p class="testimonial-author">— Coordenadora, Estrutura Dinâmica</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Treinamento superou todas expectativas, fora do normal!"</p>
+                    <p class="testimonial-author">— Analista, Strufaldi</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Aprendi muito com esse treinamento e vou levar para minha vida como um todo. Professor muito didático dosando teoria e prática."</p>
+                    <p class="testimonial-author">— Coordenadora Compras, TanksBr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes -->
+    <section class="clients" id="clientes">
+        <div class="container">
+            <h2 class="section-title">Empresas que confiam na Descomplique</h2>
+            <div class="clients-grid">
+                <div class="client-logo">Solo</div>
+                <div class="client-logo">Chemson</div>
+                <div class="client-logo">Casa do Construtor</div>
+                <div class="client-logo">Villagres</div>
+                <div class="client-logo">GRHRC</div>
+                <div class="client-logo">Sindhosftil</div>
+                <div class="client-logo">Ethimos</div>
+                <div class="client-logo">Vestra</div>
+                <div class="client-logo">TanksBR</div>
+                <div class="client-logo">Ecoprimos</div>
+                <div class="client-logo">Aspacer</div>
+                <div class="client-logo">DPV</div>
+                <div class="client-logo">Spine Implantes</div>
+                <div class="client-logo">CCB</div>
+                <div class="client-logo">Bocão</div>
+                <div class="client-logo">CBB</div>
+                <div class="client-logo">Luizzi</div>
+                <div class="client-logo">Alcloro</div>
+                <div class="client-logo">Tubopartes</div>
+                <div class="client-logo">Supra</div>
+                <div class="client-logo">Bioset</div>
+                <div class="client-logo">Strufaldi</div>
+                <div class="client-logo">Spagnhol</div>
+                <div class="client-logo">Santa Filomena</div>
+                <div class="client-logo">Fischer</div>
+                <div class="client-logo">Haggai</div>
+                <div class="client-logo">Víncula</div>
+                <div class="client-logo">Estrutura Dinâmica</div>
+                <div class="client-logo">APAE</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Conteúdos gratuitos sobre gestão</h2>
+            <div class="blog-grid">
+                <article class="blog-card coming-soon">
+                    <div class="blog-image">
+                        <span class="coming-badge">EM BREVE</span>
+                    </div>
+                    <h3>Como estruturar um processo de Recrutamento e Seleção eficiente</h3>
+                    <p>Em breve: conteúdo completo sobre este tema</p>
+                </article>
+                <article class="blog-card coming-soon">
+                    <div class="blog-image">
+                        <span class="coming-badge">EM BREVE</span>
+                    </div>
+                    <h3>5 erros comuns na gestão de equipes em PMEs</h3>
+                    <p>Em breve: conteúdo completo sobre este tema</p>
+                </article>
+                <article class="blog-card coming-soon">
+                    <div class="blog-image">
+                        <span class="coming-badge">EM BREVE</span>
+                    </div>
+                    <h3>Plano de Cargos e Salários: por onde começar?</h3>
+                    <p>Em breve: conteúdo completo sobre este tema</p>
+                </article>
+                <article class="blog-card coming-soon">
+                    <div class="blog-image">
+                        <span class="coming-badge">EM BREVE</span>
+                    </div>
+                    <h3>Clima organizacional: como medir e melhorar resultados</h3>
+                    <p>Em breve: conteúdo completo sobre este tema</p>
+                </article>
+                <article class="blog-card coming-soon">
+                    <div class="blog-image">
+                        <span class="coming-badge">EM BREVE</span>
+                    </div>
+                    <h3>Liderança na prática: ferramentas para o dia a dia</h3>
+                    <p>Em breve: conteúdo completo sobre este tema</p>
+                </article>
+                <article class="blog-card coming-soon">
+                    <div class="blog-image">
+                        <span class="coming-badge">EM BREVE</span>
+                    </div>
+                    <h3>Nova NR-1: o que os líderes precisam saber agora</h3>
+                    <p>Em breve: conteúdo completo sobre este tema</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contato">
+        <div class="contact-shape"></div>
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Vamos descomplica a gestão da sua empresa?</h2>
+                <p class="contact-intro">Entre em contato e descubra como podemos ajudar sua empresa a crescer com uma gestão de pessoas estruturada e estratégica.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <a href="https://wa.me/5519996655163" target="_blank" rel="noopener">(19) 99665-5163</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <a href="https://instagram.com/descompliquerh" target="_blank" rel="noopener">@descompliquerh</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Rio Claro — SP</span>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site%20da%20Descomplique%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços.%0A%0AMinha%20empresa%20é%20do%20ramo%20[____]%20e%20temos%20[____]%20colaboradores.%0A%0AQual%20o%20próximo%20passo?" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                    Agendar conversa via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-text">des com plique</span><span class="logo-dot">.</span>
+                </div>
+                <p class="footer-tagline">estratégia em pessoas e negócios</p>
+            </div>
+            
+            <nav class="footer-nav">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#treinamentos">Treinamentos</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <a href="https://instagram.com/descompliquerh" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://wa.me/5519996655163" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Descomplique. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site%20da%20Descomplique." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
