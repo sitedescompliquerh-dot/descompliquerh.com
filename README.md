@@ -1,45 +1,48 @@
 # Descomplique — Site Institucional
 
-Site institucional da **Descomplique Estratégia em Pessoas e Negócios**.
+Site da **Descomplique — Estratégia em Pessoas e Negócios**, consultoria especializada em gestão de pessoas para médias empresas em Rio Claro e região.
+
+## Como publicar (GitHub Pages)
+
+1. Crie um repositório no GitHub (ex: `descomplique-site`)
+2. Faça upload de **todos os arquivos e pastas** mantendo a estrutura abaixo
+3. Vá em **Settings → Pages → Source: Deploy from a branch → main → / (root)**
+4. O site estará disponível em `https://seuusuario.github.io/descomplique-site/`
+
+### Para domínio personalizado (ex: descompliquerh.com)
+
+1. Em **Settings → Pages → Custom domain**, insira `descompliquerh.com`
+2. No provedor DNS, crie um registro CNAME apontando para `seuusuario.github.io`
+3. Marque **Enforce HTTPS**
 
 ## Estrutura
 
 ```
-descomplique-site/
-├── index.html              # Página principal (HTML + CSS + JS inline)
-├── foto_treinamento.jpeg   # Foto de treinamento (hero fallback + seção Sobre)
-├── video_descomplique.mp4  # Vídeo do hero (adicionar manualmente — arquivo grande)
-├── jacqueline.jpg          # Foto da consultora Jacqueline (adicionar)
-├── pablo.jpg               # Foto do consultor Pablo (adicionar)
-└── README.md
+/
+├── index.html              ← site completo (46KB)
+├── pablo-palestras.mp4     ← vídeo do hero (autoplay, muted, loop)
+├── README.md
+└── img/
+    ├── treinamento-descomplique.jpg
+    ├── jacqueline-boriam-beloni.jpg
+    ├── pablo-nascimento-beloni.jpg
+    ├── ... (40 imagens: fotos + logos de clientes)
 ```
 
-## Como subir no GitHub Pages
+## Tecnologias
 
-1. Faça o push deste repositório para o GitHub
-2. Vá em **Settings → Pages**
-3. Em *Source*, selecione **Deploy from a branch → main → / (root)**
-4. Salve — em 1–2 minutos o site estará disponível
+- HTML5 semântico
+- CSS3 (variáveis, grid, flexbox, animações)
+- Fontes: Sora + DM Sans (Google Fonts)
+- Zero dependências JavaScript
+- Imagens otimizadas em pasta separada
 
-## Arquivos a adicionar manualmente (por serem grandes)
+## Contato
 
-- `video_descomplique.mp4` — vídeo do hero (> 25MB, limite do GitHub)
-- `jacqueline.jpg` — foto da consultora
-- `pablo.jpg` — foto do consultor Pablo
+- **WhatsApp:** (19) 99665-5163
+- **Instagram:** [@descompliquerh](https://instagram.com/descompliquerh)
+- **LinkedIn:** [Descomplique](https://www.linkedin.com/company/descomplique-gestão-de-pessoas-e-carreira/)
 
-> Para o vídeo, caso ultrapasse 25 MB, hospede no YouTube (unlisted) ou AWS S3 e atualize o `src` no HTML.
+---
 
-## Identidade Visual
-
-| Token | Valor |
-|-------|-------|
-| Azul escuro | `#2D2952` |
-| Verde neon | `#39FF14` |
-| Branco | `#FFFFFF` |
-| Cinza claro | `#F5F5F5` |
-| Fonte display | Sora |
-| Fonte corpo | DM Sans |
-
-## Contato técnico
-
-Site desenvolvido para Descomplique — Rio Claro, SP.
+© 2026 Descomplique. Todos os direitos reservados.

@@ -3,848 +3,647 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Consultoria especializada em RH para pequenas e médias empresas em Rio Claro e região. Treinamentos, plano de cargos, avaliação de desempenho. 20 anos de experiência.">
-<meta name="keywords" content="consultoria rh rio claro, gestão de pessoas, treinamento liderança, plano de cargos e salários, consultoria empresarial rio claro">
-<title>Descomplique — Consultoria em Gestão de Pessoas e Negócios | Rio Claro</title>
-
+<title>Descomplique — Consultoria em Gestão de Pessoas e Negócios</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Descomplique - Estratégia em Pessoas e Negócios",
-  "description": "Consultoria especializada em gestão de pessoas e negócios para pequenas e médias empresas",
-  "url": "https://descomplique.com.br",
-  "telephone": "+55-19-99665-5163",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Rio Claro",
-    "addressRegion": "SP",
-    "addressCountry": "BR"
-  },
-  "sameAs": ["https://www.instagram.com/descompliquerh"]
-}
-</script>
-
 <style>
-/* ============================================================
-   DESCOMPLIQUE v2 — IDENTIDADE VISUAL COMPLETA
-   ============================================================ */
-:root {
-  --p: #2D2952;
-  --a: #39FF14;
-  --w: #fff;
-  --g: #F5F5F5;
-  --gm: #E0E0E0;
-  --tl: #666666;
-  --fd: 'Sora', sans-serif;
-  --fb: 'DM Sans', sans-serif;
-  --sh-sm: 0 2px 8px rgba(45,41,82,.08);
-  --sh-md: 0 4px 16px rgba(45,41,82,.12);
-  --sh-lg: 0 8px 32px rgba(45,41,82,.16);
-  --r-sm: 8px;
-  --r-md: 16px;
-  --r-lg: 24px;
-  --r-full: 9999px;
-  --tr: .3s ease;
-}
-
 *{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --p:#2D2952;--a:#39FF14;--w:#fff;--g:#F5F5F5;--gm:#E2E2E2;
+  --tl:#5a5a7a;--fd:'Sora',sans-serif;--fb:'DM Sans',sans-serif;
+}
 html{scroll-behavior:smooth;}
 body{font-family:var(--fb);color:#1a1a1a;overflow-x:hidden;background:#fff;line-height:1.6;}
-a{text-decoration:none;color:inherit;}
-ul{list-style:none;}
-img{max-width:100%;display:block;}
-
+a{text-decoration:none;color:inherit;}ul{list-style:none;}img{max-width:100%;display:block;}
 .wrap{max-width:1200px;margin:0 auto;padding:0 2rem;}
-.stit{font-family:var(--fd);font-size:clamp(2rem,5vw,3.2rem);font-weight:700;color:var(--p);margin-bottom:3rem;line-height:1.15;}
-.stag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--a);background:rgba(57,255,20,.1);padding:.35rem 1rem;border-radius:var(--r-full);margin-bottom:1rem;}
 
-/* ============================================================
-   BOTÕES
-   ============================================================ */
-.btn{display:inline-block;padding:.9rem 2rem;font-family:var(--fd);font-weight:700;font-size:.9rem;border-radius:var(--r-full);transition:all var(--tr);cursor:pointer;border:2px solid transparent;text-align:center;white-space:nowrap;}
-.btn-primary{background:var(--a);color:var(--p);box-shadow:0 4px 20px rgba(57,255,20,.32);}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(57,255,20,.48);}
-.btn-secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
-.btn-secondary:hover{background:rgba(255,255,255,.12);border-color:#fff;}
-.btn-outline{background:transparent;color:var(--p);border-color:var(--p);}
-.btn-outline:hover{background:var(--p);color:#fff;}
-.btn-lg{padding:1.1rem 2.5rem;font-size:1rem;}
-
-/* ============================================================
-   NAV
-   ============================================================ */
+/* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:all .4s;}
-.nav.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(45,41,82,.08);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1200px;margin:0 auto;padding:0 2rem;}
-.logo{font-family:var(--fd);font-size:1.35rem;font-weight:300;letter-spacing:-.03em;}
-.logo-text{color:#fff;transition:color .4s;}
-.logo-dot{color:var(--a);font-weight:700;}
-.nav.solid .logo-text{color:var(--p);}
+.nav.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(45,41,82,.07);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;}
+.logo-nav{font-family:var(--fd);font-size:1.3rem;font-weight:300;letter-spacing:-.03em;}
+.logo-nav .lw{color:#fff;transition:color .4s;}.logo-nav .ld{color:var(--a);font-weight:700;}
+.nav.solid .logo-nav .lw{color:var(--p);}
 .nl{display:flex;gap:1.6rem;align-items:center;}
 .nl a{font-size:.85rem;font-weight:500;color:rgba(255,255,255,.85);transition:color .2s;white-space:nowrap;}
 .nav.solid .nl a{color:var(--p);opacity:.75;}
 .nl a:hover{color:var(--a)!important;opacity:1!important;}
-.nl .ncta{background:var(--a)!important;color:var(--p)!important;opacity:1!important;padding:.5rem 1.3rem;border-radius:var(--r-full);font-weight:700!important;}
-.nl .ncta:hover{transform:translateY(-2px);}
+.ncta{background:var(--a)!important;color:var(--p)!important;opacity:1!important;padding:.5rem 1.3rem;border-radius:999px;font-weight:700!important;}
 .ntog{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.3rem;}
 .ntog span{width:24px;height:2px;background:#fff;border-radius:2px;display:block;transition:.3s;}
 .nav.solid .ntog span{background:var(--p);}
-@media(max-width:900px){
-  .nl{position:fixed;top:72px;left:0;right:0;background:#fff;flex-direction:column;padding:1.5rem 2rem;box-shadow:var(--sh-lg);transform:translateY(-120%);opacity:0;transition:all .35s;gap:1rem;}
-  .nl.open{transform:translateY(0);opacity:1;}
-  .nl a{color:var(--p)!important;opacity:.8!important;}
-  .ntog{display:flex;}
-}
 
-/* ============================================================
-   HERO — SPLIT SCREEN com vídeo/foto
-   ============================================================ */
-.hero{min-height:100vh;background:var(--p);position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;}
-
-/* lado esquerdo — conteúdo */
-.hero-left{display:flex;flex-direction:column;justify-content:center;padding:120px 3.5rem 4rem;position:relative;z-index:2;}
-.hero-blob{position:absolute;bottom:-10%;left:-10%;width:350px;height:350px;background:var(--a);opacity:.06;border-radius:40% 60% 70% 30%/40% 50% 60% 50%;animation:morph 18s infinite;pointer-events:none;}
+/* HERO */
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;}
+.hvid{position:absolute;inset:0;}
+.hvid video,.hvid img.fb{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
+.hov{position:absolute;inset:0;background:linear-gradient(108deg,rgba(45,41,82,.94) 0%,rgba(45,41,82,.8) 40%,rgba(45,41,82,.38) 68%,transparent 100%);}
+.hblob{position:absolute;bottom:-8%;right:-4%;width:220px;height:220px;background:var(--a);opacity:.08;border-radius:40% 60% 70% 30%/40% 50% 60% 50%;animation:morph 22s infinite;pointer-events:none;z-index:1;}
 @keyframes morph{0%,100%{border-radius:40% 60% 70% 30%/40% 50% 60% 50%;}50%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%;}}
-
-.htag{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(57,255,20,.4);color:rgba(255,255,255,.9);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.35rem 1rem;border-radius:var(--r-full);margin-bottom:1.8rem;width:fit-content;}
-.htag-dot{width:6px;height:6px;border-radius:50%;background:var(--a);animation:blink 2s infinite;flex-shrink:0;}
+.hcont{position:relative;z-index:2;width:100%;padding-top:72px;}
+.hinn{max-width:560px;padding:5rem 0;}
+.htag{display:inline-flex;align-items:center;gap:.55rem;border:1px solid rgba(57,255,20,.45);color:rgba(255,255,255,.9);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.38rem 1rem;border-radius:999px;margin-bottom:1.8rem;}
+.htag-d{width:6px;height:6px;border-radius:50%;background:var(--a);animation:blink 2s infinite;flex-shrink:0;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:.2;}}
-
-.hh1{font-family:var(--fd);font-size:clamp(2.4rem,4.5vw,3.8rem);font-weight:800;color:#fff;line-height:1.08;margin-bottom:1.2rem;letter-spacing:-.02em;}
+.hh1{font-family:var(--fd);font-size:clamp(2.3rem,4.8vw,3.8rem);font-weight:800;color:#fff;line-height:1.1;margin-bottom:1.4rem;letter-spacing:-.02em;}
 .hh1 em{font-style:normal;color:var(--a);}
-.hsub{font-size:1rem;color:rgba(255,255,255,.68);line-height:1.75;margin-bottom:2.5rem;max-width:440px;}
+.hsub{font-size:1rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2.5rem;max-width:460px;}
 .hctas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem;}
-.hst{display:flex;gap:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.12);flex-wrap:wrap;}
-.hst-item .n{font-family:var(--fd);font-size:1.8rem;font-weight:800;color:#fff;line-height:1;}
-.hst-item .n span{color:var(--a);}
-.hst-item p{font-size:.75rem;color:rgba(255,255,255,.55);margin-top:.25rem;letter-spacing:.04em;text-transform:uppercase;}
+.btnG{background:var(--a);color:var(--p);font-family:var(--fd);font-weight:700;font-size:.875rem;padding:.88rem 2rem;border-radius:999px;transition:all .3s;box-shadow:0 4px 24px rgba(57,255,20,.38);display:inline-block;white-space:nowrap;}
+.btnG:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(57,255,20,.55);}
+.btnGh{color:#fff;font-family:var(--fd);font-weight:600;font-size:.875rem;padding:.88rem 2rem;border-radius:999px;border:1.5px solid rgba(255,255,255,.4);transition:all .3s;display:inline-block;white-space:nowrap;}
+.btnGh:hover{border-color:#fff;background:rgba(255,255,255,.12);}
+.hst{display:flex;gap:2.5rem;padding-top:2.5rem;border-top:1px solid rgba(255,255,255,.15);flex-wrap:wrap;}
+.hst .n{font-family:var(--fd);font-size:1.8rem;font-weight:800;color:#fff;line-height:1;}
+.hst .n em{font-style:normal;color:var(--a);}
+.hst .l{font-size:.75rem;color:rgba(255,255,255,.5);margin-top:.25rem;text-transform:uppercase;letter-spacing:.06em;}
+.scroll-h{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:.5rem;color:rgba(255,255,255,.35);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;}
+.sln{width:1px;height:44px;background:rgba(255,255,255,.12);position:relative;overflow:hidden;}
+.sln::after{content:'';position:absolute;top:-44px;left:0;width:100%;height:44px;background:var(--a);animation:sd 2.2s infinite ease-in;}
+@keyframes sd{0%{top:-44px;}100%{top:100%;}}
 
-/* lado direito — media */
-.hero-right{position:relative;overflow:hidden;}
-.hero-right::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--p) 0%,transparent 30%);z-index:1;pointer-events:none;}
-.hero-right video,.hero-right img.hero-fallback{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
-.hero-right .hero-overlay{position:absolute;inset:0;background:rgba(45,41,82,.3);z-index:0;}
-
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr;min-height:auto;}
-  .hero-left{padding:100px 1.5rem 3rem;}
-  .hero-right{height:340px;order:-1;}
-  .hctas{flex-direction:column;}
-  .hctas .btn{width:100%;text-align:center;}
+/* SHARED */
+.stag{
+  font-family:var(--fd);font-size:.68rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--p);margin-bottom:.85rem;display:inline-flex;
+  align-items:center;gap:.5rem;
 }
-
-/* ============================================================
-   PROPOSTA DE VALOR
-   ============================================================ */
-.value-prop{padding:6rem 0;background:var(--g);}
-.value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;}
-.value-card{background:#fff;padding:2.5rem;border-radius:var(--r-md);box-shadow:var(--sh-sm);transition:all var(--tr);border-bottom:3px solid transparent;}
-.value-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);border-bottom-color:var(--a);}
-.value-icon{width:56px;height:56px;background:rgba(57,255,20,.12);color:var(--p);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;}
-.value-card h3{font-family:var(--fd);font-size:1.05rem;font-weight:700;color:var(--p);margin-bottom:.6rem;}
-.value-card p{font-size:.9rem;color:var(--tl);line-height:1.65;}
-
-/* ============================================================
-   SOBRE
-   ============================================================ */
-.about{padding:6rem 0;position:relative;}
-.about-shape{position:absolute;bottom:5%;left:-8%;width:400px;height:400px;background:var(--a);opacity:.04;border-radius:50% 50% 30% 70%/60% 40% 60% 40%;z-index:0;}
-.about-intro{max-width:860px;margin:0 auto 4rem;text-align:center;position:relative;z-index:1;}
-.about-text p{font-size:1.05rem;color:var(--tl);line-height:1.8;margin-bottom:1rem;}
-
-/* Foto de treinamento */
-.about-photo{margin:0 auto 4rem;max-width:900px;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-lg);position:relative;z-index:1;}
-.about-photo img{width:100%;height:420px;object-fit:cover;object-position:center top;}
-.about-photo-caption{background:var(--p);color:rgba(255,255,255,.7);font-size:.8rem;text-align:center;padding:.7rem;letter-spacing:.04em;}
-
-/* Consultores */
-.consultants{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;position:relative;z-index:1;}
-.consultant-card{background:#fff;border-radius:var(--r-lg);padding:2.5rem;box-shadow:var(--sh-md);transition:all var(--tr);text-align:center;}
-.consultant-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);}
-.consultant-img{width:160px;height:160px;margin:0 auto 1.2rem;border-radius:50%;overflow:hidden;border:4px solid var(--a);box-shadow:0 6px 24px rgba(57,255,20,.2);}
-.consultant-img img{width:100%;height:100%;object-fit:cover;}
-.consultant-img-placeholder{width:100%;height:100%;background:linear-gradient(135deg,var(--p),#483D8B);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:2.5rem;font-weight:800;color:var(--a);}
-.consultant-card h3{font-family:var(--fd);font-size:1.2rem;color:var(--p);margin-bottom:.4rem;}
-.consultant-role{color:var(--a);font-weight:600;font-size:.9rem;margin-bottom:1rem;}
-.consultant-bio{font-size:.88rem;color:var(--tl);line-height:1.7;margin-bottom:1.2rem;}
-.consultant-li{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:700;color:var(--p);background:var(--g);padding:.5rem 1.1rem;border-radius:var(--r-full);transition:all var(--tr);}
-.consultant-li:hover{background:var(--p);color:#fff;}
-
-/* ============================================================
-   SOLUÇÕES
-   ============================================================ */
-.solucoes{padding:6rem 0;background:var(--g);}
-.sol-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;}
-.sol-card{background:#fff;padding:1.6rem;border-radius:var(--r-md);border:2px solid transparent;transition:all var(--tr);position:relative;}
-.sol-card:hover{border-color:var(--a);transform:translateY(-4px);box-shadow:var(--sh-md);}
-.sol-card.hot{background:linear-gradient(135deg,var(--p) 0%,#3d3570 100%);color:#fff;}
-.sol-card.hot h3{color:#fff;}
-.sol-card h3{font-family:var(--fd);font-size:1rem;font-weight:600;line-height:1.4;color:var(--p);}
-.sbadge{display:inline-block;background:var(--a);color:var(--p);font-size:.68rem;font-weight:800;padding:.22rem .7rem;border-radius:var(--r-full);margin-bottom:.7rem;text-transform:uppercase;letter-spacing:.05em;}
-
-/* ============================================================
-   TREINAMENTOS
-   ============================================================ */
-.training{padding:6rem 0;}
-.methodology{background:var(--p);border-radius:var(--r-lg);padding:3rem;margin-bottom:3.5rem;}
-.methodology h3{font-family:var(--fd);font-size:1.4rem;color:#fff;text-align:center;margin-bottom:2rem;}
-.method-steps{display:flex;align-items:flex-start;justify-content:center;gap:1rem;flex-wrap:wrap;}
-.method-step{flex:1;min-width:180px;text-align:center;padding:1rem;}
-.step-num{width:50px;height:50px;background:var(--a);color:var(--p);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;margin:0 auto .8rem;}
-.method-step h4{color:var(--a);font-size:.95rem;margin-bottom:.5rem;}
-.method-step p{color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.6;}
-.step-arrow{font-size:1.5rem;color:var(--a);padding-top:2rem;}
-
-.training-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.5rem;}
-.tr-card{background:#fff;padding:2rem;border-radius:var(--r-md);box-shadow:var(--sh-md);border:3px solid var(--a);transition:all var(--tr);position:relative;}
-.tr-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);}
-.tr-dur{position:absolute;top:1.2rem;right:1.2rem;background:var(--a);color:var(--p);padding:.35rem .9rem;border-radius:var(--r-full);font-weight:800;font-size:.8rem;}
-.tr-card h3{font-family:var(--fd);font-size:1.15rem;color:var(--p);margin-bottom:.5rem;padding-right:4rem;}
-.tr-audience{color:var(--a);font-weight:600;font-size:.85rem;margin-bottom:.8rem;}
-.tr-card p:not(.tr-audience){font-size:.88rem;color:var(--tl);line-height:1.7;}
-
-/* ============================================================
-   DIFERENCIAIS
-   ============================================================ */
-.diferenciais{padding:6rem 0;background:var(--g);}
-.diff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:3rem 1.5rem;}
-.diff-card{background:#fff;padding:2.5rem 2rem 2rem;border-radius:var(--r-md);box-shadow:var(--sh-sm);position:relative;transition:all var(--tr);}
-.diff-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);}
-.diff-num{position:absolute;top:-22px;left:1.5rem;width:52px;height:52px;background:var(--a);color:var(--p);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;box-shadow:0 4px 16px rgba(57,255,20,.3);}
-.diff-card h3{font-family:var(--fd);font-size:1.05rem;margin-top:1.5rem;margin-bottom:.6rem;color:var(--p);}
-.diff-card h3 em{font-style:normal;color:var(--a);}
-.diff-card p{font-size:.88rem;color:var(--tl);line-height:1.65;}
-
-/* ============================================================
-   DEPOIMENTOS
-   ============================================================ */
-.testimonials{padding:6rem 0;background:var(--p);}
-.testimonials .stit{color:#fff;text-align:center;}
-.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
-.test-card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);padding:2rem;border-radius:var(--r-md);border:1px solid rgba(255,255,255,.12);transition:all var(--tr);}
-.test-card:hover{background:rgba(255,255,255,.13);transform:translateY(-4px);}
-.test-quote{font-size:2.5rem;line-height:1;color:var(--a);margin-bottom:.5rem;font-family:serif;}
-.test-text{font-size:.95rem;line-height:1.75;color:rgba(255,255,255,.85);font-style:italic;margin-bottom:1.2rem;}
-.test-author{color:var(--a);font-weight:700;font-size:.85rem;}
-
-/* ============================================================
-   CLIENTES
-   ============================================================ */
-.clientes{padding:6rem 0;background:#fff;}
-.clients-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1rem;}
-.client-badge{background:var(--g);padding:1.2rem;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:var(--p);text-align:center;min-height:70px;transition:all var(--tr);border:2px solid transparent;}
-.client-badge:hover{border-color:var(--a);background:#fff;transform:scale(1.04);box-shadow:var(--sh-md);}
-
-/* ============================================================
-   BLOG
-   ============================================================ */
-.blog{padding:6rem 0;background:var(--g);}
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;}
-.blog-card{background:#fff;border-radius:var(--r-md);overflow:hidden;box-shadow:var(--sh-sm);transition:all var(--tr);opacity:.75;}
-.blog-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);opacity:1;}
-.blog-img{height:180px;background:linear-gradient(135deg,var(--p) 0%,#483D8B 100%);display:flex;align-items:center;justify-content:center;}
-.blog-badge{background:var(--a);color:var(--p);padding:.6rem 1.3rem;border-radius:var(--r-full);font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;}
-.blog-body{padding:1.5rem;}
-.blog-body h3{font-family:var(--fd);font-size:1rem;color:var(--p);margin-bottom:.5rem;line-height:1.4;}
-.blog-body p{font-size:.85rem;color:var(--tl);}
-
-/* ============================================================
-   CONTATO
-   ============================================================ */
-.contato{padding:6rem 0;background:var(--p);position:relative;overflow:hidden;}
-.contato-blob{position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:var(--a);opacity:.04;border-radius:50%;pointer-events:none;}
-.contato-inner{max-width:680px;margin:0 auto;text-align:center;position:relative;z-index:1;}
-.contato .stit{color:#fff;}
-.contato-sub{font-size:1.05rem;color:rgba(255,255,255,.65);margin-bottom:2.5rem;line-height:1.75;}
-.contato-info{display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem;align-items:center;}
-.contato-item{display:flex;align-items:center;gap:.75rem;font-size:1rem;color:rgba(255,255,255,.9);}
-.contato-item svg{color:var(--a);flex-shrink:0;}
-.contato-item a{font-weight:600;transition:color var(--tr);}
-.contato-item a:hover{color:var(--a);}
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-.footer{background:#1e1c3a;color:#fff;padding:3.5rem 0 1.5rem;}
-.footer-inner{display:grid;grid-template-columns:1fr auto auto;gap:3rem;margin-bottom:3rem;}
-.footer-brand .logo{font-family:var(--fd);font-size:1.3rem;font-weight:300;margin-bottom:.5rem;}
-.footer-brand .logo-text{color:rgba(255,255,255,.9);}
-.footer-tagline{font-size:.85rem;color:var(--a);}
-.footer h4{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--a);margin-bottom:1rem;}
-.footer ul li{margin-bottom:.6rem;}
-.footer ul a,.footer-social a{font-size:.88rem;color:rgba(255,255,255,.6);transition:color var(--tr);display:block;margin-bottom:.5rem;}
-.footer ul a:hover,.footer-social a:hover{color:var(--a);}
-.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem;}
-.footer-copy{font-size:.8rem;color:rgba(255,255,255,.35);text-align:center;}
-@media(max-width:680px){
-  .footer-inner{grid-template-columns:1fr;gap:2rem;}
+.stag::before{
+  content:'';display:inline-block;width:8px;height:8px;
+  border-radius:50%;background:var(--a);flex-shrink:0;
 }
+/* stag on dark backgrounds stays white/green */
+.fotos .stag,.depoimentos .stag{color:var(--a);}
+.fotos .stag::before,.depoimentos .stag::before{background:#fff;}
+/* inline stag (centered) */
+span.stag{display:inline-flex;}
+.stit{font-family:var(--fd);font-size:clamp(1.85rem,3.2vw,2.7rem);font-weight:700;color:var(--p);line-height:1.2;margin-bottom:2.5rem;}
+.stit-w{color:#fff;}
+section{padding:5.5rem 0;}
 
-/* ============================================================
-   WA FLOAT
-   ============================================================ */
-.wa-float{position:fixed;bottom:2rem;right:2rem;width:60px;height:60px;background:#25D366;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:999;transition:all var(--tr);}
-.wa-float:hover{transform:scale(1.1);box-shadow:0 8px 28px rgba(37,211,102,.6);}
+/* SOBRE */
+.sobre{background:#fff;position:relative;overflow:hidden;}
+.s-blob{position:absolute;bottom:-80px;left:-60px;width:280px;height:280px;background:var(--a);opacity:.04;border-radius:50% 50% 30% 70%/60% 40% 60% 40%;pointer-events:none;}
+.sobre-intro{display:grid;grid-template-columns:1fr 400px;gap:4rem;align-items:center;margin-bottom:4.5rem;}
+.stxt p{font-size:1rem;color:var(--tl);line-height:1.82;margin-bottom:1.2rem;}
+.stxt p:last-child{margin-bottom:0;}
+.team-photo-wrap{position:relative;}
+.team-photo-frame{border-radius:22px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 24px 64px rgba(45,41,82,.22);position:relative;}
+.team-photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .6s;}
+.team-photo-frame:hover img{transform:scale(1.03);}
+.team-badge{position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;background:rgba(45,41,82,.92);backdrop-filter:blur(12px);border-radius:14px;padding:1rem 1.2rem;display:flex;align-items:center;gap:.85rem;border:1px solid rgba(57,255,20,.2);}
+.tb-icon{width:36px;height:36px;border-radius:50%;background:var(--a);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.tb-text p{font-family:var(--fd);font-size:.8rem;font-weight:700;color:#fff;margin-bottom:.1rem;}
+.tb-text span{font-size:.72rem;color:rgba(255,255,255,.6);}
+.team-dot{position:absolute;top:-20px;right:-20px;width:70px;height:70px;border-radius:50%;background:var(--a);opacity:.15;z-index:-1;}
+.s-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin-bottom:4.5rem;}
+.kpi{background:var(--g);padding:1.4rem 1.5rem;border-radius:14px;text-align:center;transition:all .3s;}
+.kpi:hover{background:#fff;box-shadow:0 8px 24px rgba(45,41,82,.1);transform:translateY(-3px);}
+.kpi .n{font-family:var(--fd);font-size:2.2rem;font-weight:800;color:var(--p);line-height:1;}
+.kpi .n span{color:var(--a);}.kpi .l{font-size:.78rem;color:var(--tl);margin-top:.3rem;line-height:1.4;}
+.cons-title{font-family:var(--fd);font-size:1.4rem;font-weight:700;color:var(--p);margin-bottom:2rem;text-align:center;}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.cc{background:var(--p);border-radius:20px;overflow:hidden;padding:2rem 1.75rem;display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform .3s,box-shadow .3s;box-shadow:0 6px 28px rgba(45,41,82,.18);}
+.cc:hover{transform:translateY(-5px);box-shadow:0 16px 48px rgba(45,41,82,.26);}
+.cp{width:120px;height:120px;border-radius:50%;overflow:hidden;flex-shrink:0;border:3px solid var(--a);box-shadow:0 0 0 5px rgba(57,255,20,.15);margin-bottom:1.25rem;}
+.cp img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.cc h3{font-family:var(--fd);font-size:1rem;font-weight:700;color:#fff;margin-bottom:.25rem;line-height:1.3;}
+.cc .role{color:var(--a);font-weight:600;font-size:.78rem;margin-bottom:.85rem;line-height:1.4;display:block;}
+.cc .bio{font-size:.79rem;color:rgba(255,255,255,.7);line-height:1.72;margin-bottom:1.1rem;}
+.cc .li{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--fd);font-size:.74rem;font-weight:700;color:var(--a);border:1.5px solid rgba(57,255,20,.4);padding:.35rem .85rem;border-radius:999px;transition:all .25s;}
+.cc .li:hover{background:var(--a);color:var(--p);}
 
-/* ============================================================
-   ANIMAÇÕES
-   ============================================================ */
-@keyframes fadeInUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
-.hero-left>*{animation:fadeInUp .7s ease both;}
-.hero-left>*:nth-child(1){animation-delay:.1s;}
-.hero-left>*:nth-child(2){animation-delay:.2s;}
-.hero-left>*:nth-child(3){animation-delay:.3s;}
-.hero-left>*:nth-child(4){animation-delay:.4s;}
-.hero-left>*:nth-child(5){animation-delay:.5s;}
+/* SOLUÇÕES */
+.solucoes{background:var(--g);}
+.sol-layout{display:grid;grid-template-columns:1fr 320px;gap:3.5rem;align-items:start;}
+.sol-grid{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;}
+.sc{background:#fff;padding:1.35rem 1.4rem;border-radius:12px;border:2px solid transparent;transition:all .25s;}
+.sc:hover{border-color:var(--a);transform:translateY(-3px);box-shadow:0 8px 28px rgba(45,41,82,.1);}
+.sc.dest{background:var(--p);}
+.sc.dest h3{color:#fff;}
+.sbadge{display:inline-block;background:var(--a);color:var(--p);font-size:.6rem;font-weight:800;padding:.2rem .65rem;border-radius:999px;margin-bottom:.65rem;text-transform:uppercase;letter-spacing:.08em;}
+.sc h3{font-family:var(--fd);font-size:.875rem;font-weight:600;line-height:1.45;color:var(--p);}
+.sol-photo{position:sticky;top:100px;}
+.sol-photo-inner{border-radius:20px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 16px 48px rgba(45,41,82,.18);}
+.sol-photo-inner img{width:100%;height:100%;object-fit:cover;}
+.sol-photo-caption{margin-top:1rem;font-family:var(--fd);font-size:.8rem;font-weight:600;color:var(--p);text-align:center;opacity:.75;}
+.sol-photo-caption em{color:var(--p);font-style:normal;font-weight:800;}
 
-/* ============================================================
-   RESPONSIVO EXTRA
-   ============================================================ */
-@media(max-width:600px){
-  .stit{font-size:1.8rem;margin-bottom:2rem;}
-  .method-steps{flex-direction:column;align-items:center;}
-  .step-arrow{transform:rotate(90deg);}
-  .diff-grid{gap:3.5rem 1rem;}
-  .hero-left{padding:100px 1.2rem 2.5rem;}
-  .hst{gap:1.5rem;}
-  .footer-inner{gap:1.5rem;}
-  .contato-item{font-size:.9rem;}
+/* TREINAMENTOS */
+.treinamentos{background:#fff;}
+/* Metodologia: foto da turma como bg escurecido */
+.tmeth{border-radius:20px;margin-bottom:3.5rem;overflow:hidden;position:relative;min-height:260px;display:flex;align-items:center;}
+.tmeth-bg{position:absolute;inset:0;}
+.tmeth-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(.3);}
+.tmeth-content{position:relative;z-index:1;padding:3rem;width:100%;}
+.tmeth h3{font-family:var(--fd);font-size:1.1rem;font-weight:700;color:#fff;text-align:center;margin-bottom:2.5rem;}
+.msteps{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;}
+.ms{flex:1;min-width:160px;text-align:center;padding:.75rem;}
+.msn{width:46px;height:46px;background:var(--a);color:var(--p);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;margin:0 auto .7rem;}
+.ms h4{font-family:var(--fd);color:var(--a);font-size:.85rem;font-weight:700;margin-bottom:.4rem;}
+.ms p{font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.6;}
+.marr{font-size:1.6rem;color:var(--a);opacity:.4;}
+/* Cards com foto de header (cenas de treinamento, não de Pablo solo) */
+.tcards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:3rem;}
+.tc{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(45,41,82,.08);border:2px solid var(--a);transition:all .3s;}
+.tc:hover{transform:translateY(-5px);box-shadow:0 12px 36px rgba(45,41,82,.14);}
+.tc-img{height:200px;overflow:hidden;position:relative;}
+.tc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+.tc:hover .tc-img img{transform:scale(1.05);}
+.tc-body{padding:1.5rem 1.6rem;position:relative;}
+.tcd{position:absolute;top:-16px;right:1.2rem;background:var(--a);color:var(--p);font-family:var(--fd);font-size:.75rem;font-weight:800;padding:.28rem .8rem;border-radius:999px;box-shadow:0 2px 8px rgba(57,255,20,.4);}
+.tc h3{font-family:var(--fd);font-size:.975rem;font-weight:700;color:var(--p);margin-bottom:.45rem;line-height:1.3;}
+.tcpub{color:var(--a);font-weight:600;font-size:.79rem;margin-bottom:.7rem;}
+.tc p{font-size:.86rem;color:var(--tl);line-height:1.65;}
+/* Workshops — SEM FOTO: grid de cards com ícone e cor */
+.wksec{margin-top:0;}
+.wksec-header{text-align:center;margin-bottom:2rem;}
+.wksec-header h3{font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--p);margin-bottom:.5rem;}
+.wksec-header p{font-size:.9rem;color:var(--tl);}
+.wkgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+.wki{
+  background:var(--g);padding:1.4rem 1.5rem;border-radius:14px;
+  display:flex;align-items:center;gap:1rem;
+  border:2px solid transparent;transition:all .25s;
+}
+.wki:hover{border-color:var(--a);background:#fff;transform:translateY(-3px);box-shadow:0 6px 20px rgba(45,41,82,.08);}
+.wki-icon{
+  width:40px;height:40px;border-radius:10px;background:var(--p);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.wki-icon svg{color:var(--a);}
+.wki-text{font-family:var(--fd);font-size:.875rem;font-weight:600;color:var(--p);line-height:1.35;}
+.wki-text small{display:block;font-family:var(--fb);font-size:.72rem;font-weight:400;color:var(--tl);margin-top:.15rem;}
+
+/* GALERIA */
+.fotos{background:var(--p);padding:5.5rem 0;}
+.fhead{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end;margin-bottom:2.5rem;}
+.fdesc{color:rgba(255,255,255,.58);font-size:.95rem;line-height:1.72;text-align:right;}
+.fg{border-radius:14px;overflow:hidden;position:relative;cursor:default;}
+.fg img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease,filter .4s;filter:brightness(.87);}
+.fg:hover img{transform:scale(1.05);filter:brightness(1);}
+.fc{position:absolute;bottom:0;left:0;right:0;padding:.9rem 1rem .7rem;background:linear-gradient(to top,rgba(45,41,82,.82),transparent);color:#fff;font-size:.76rem;font-weight:500;opacity:0;transition:opacity .3s;}
+.fg:hover .fc{opacity:1;}
+.bento-main{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:270px 220px;gap:10px;margin-bottom:10px;}
+.bento-main .fg-wide{grid-column:1/3;}
+.bento-strip{display:grid;grid-template-columns:0.7fr 1fr 1fr;gap:10px;}
+.bento-strip .fg{height:185px;}
+.f-acc{background:var(--a);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;padding:1.5rem;}
+.f-acc .fn{font-family:var(--fd);font-size:2.6rem;font-weight:800;color:var(--p);line-height:1;}
+.f-acc .ft{font-family:var(--fd);font-size:.8rem;font-weight:700;color:var(--p);text-align:center;line-height:1.4;}
+
+/* DIFERENCIAIS */
+.diferenciais{background:var(--g);}
+.dg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:.5rem;}
+.dc{background:#fff;padding:2.5rem 1.6rem 1.75rem;border-radius:16px;box-shadow:0 2px 12px rgba(45,41,82,.07);position:relative;transition:all .3s;}
+.dc:hover{transform:translateY(-5px);box-shadow:0 12px 36px rgba(45,41,82,.12);}
+.dn{position:absolute;top:-22px;left:1.5rem;width:50px;height:50px;background:var(--a);color:var(--p);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.25rem;font-weight:800;box-shadow:0 4px 16px rgba(57,255,20,.3);}
+.dc h3{font-family:var(--fd);font-size:.975rem;font-weight:700;color:var(--p);margin-bottom:.5rem;line-height:1.3;}
+.dc h3 em{font-style:normal;color:var(--a);}.dc p{font-size:.855rem;color:var(--tl);line-height:1.65;}
+
+/* DEPOIMENTOS */
+.depoimentos{background:var(--p);}
+.depg{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1.2rem;}
+.dep{background:rgba(255,255,255,.08);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);padding:1.8rem;border-radius:16px;transition:all .3s;}
+.dep:hover{background:rgba(255,255,255,.13);transform:translateY(-4px);}
+.dq{font-size:2.2rem;color:var(--a);line-height:.8;margin-bottom:.75rem;font-family:Georgia,serif;}
+.dt{font-size:.925rem;color:rgba(255,255,255,.84);line-height:1.76;margin-bottom:1.2rem;font-style:italic;}
+.da{color:var(--a);font-weight:700;font-size:.82rem;font-family:var(--fd);}
+
+/* CLIENTES */
+.clientes{background:#fff;}
+.cl-track{display:flex;gap:1rem;animation:marquee 38s linear infinite;width:max-content;}
+.cl-track:hover{animation-play-state:paused;}
+.cl-track-2{animation-direction:reverse;margin-top:1rem;animation-duration:44s;}
+.cl-item{flex-shrink:0;width:160px;height:80px;background:var(--g);border:1.5px solid transparent;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:.75rem 1rem;transition:all .3s;}
+.cl-item:hover{background:#fff;border-color:rgba(57,255,20,.45);box-shadow:0 6px 20px rgba(45,41,82,.1);transform:translateY(-3px);}
+.cl-item img{max-width:118px;max-height:48px;width:auto;height:auto;object-fit:contain;filter:grayscale(100%) contrast(.8) brightness(.85);transition:filter .3s;display:block;margin:0 auto;}
+.cl-item:hover img{filter:grayscale(0%) contrast(1) brightness(1);}
+@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+.clientes-inner{overflow:hidden;position:relative;}
+.clientes-inner::before,.clientes-inner::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none;}
+.clientes-inner::before{left:0;background:linear-gradient(to right,#fff,transparent);}
+.clientes-inner::after{right:0;background:linear-gradient(to left,#fff,transparent);}
+
+/* CONTATO */
+.contato{background:var(--g);position:relative;overflow:hidden;}
+.cblob{position:absolute;top:10%;right:-8%;width:380px;height:380px;background:var(--a);opacity:.04;border-radius:30% 70% 70% 30%/30% 30% 70% 70%;pointer-events:none;}
+.cinn{max-width:680px;margin:0 auto;text-align:center;position:relative;z-index:1;}
+.cinn>p{font-size:1rem;color:var(--tl);line-height:1.78;margin-bottom:2.5rem;}
+.cinf{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2.5rem;}
+.ci{display:flex;align-items:center;justify-content:center;gap:.65rem;font-weight:600;color:var(--p);font-size:1rem;}
+.ci svg{color:var(--a);flex-shrink:0;}.ci a:hover{color:var(--a);}
+
+/* FOOTER */
+footer{background:#2D2952;padding:3.5rem 0 0;color:#fff;}
+.fg2{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;}
+.flogo{width:300px;height:auto;display:block;margin-bottom:1rem;mix-blend-mode:screen;}
+.ftag{color:var(--a);font-size:.875rem;}
+footer h4{font-family:var(--fd);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--a);margin-bottom:1.2rem;}
+footer ul li{margin-bottom:.6rem;}
+footer a{color:rgba(255,255,255,.6);transition:color .2s;font-size:.875rem;display:block;}
+footer a:hover{color:var(--a);}
+.fdiv{border-top:1px solid rgba(255,255,255,.1);}
+.fcopy{padding:1.5rem 2rem;text-align:center;color:rgba(255,255,255,.32);font-size:.8rem;}
+
+
+/* Strip accent cell — smaller version */
+.f-acc-sm{
+  background:var(--a);border-radius:14px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:.3rem;padding:1rem;height:185px;
+}
+.fas-num{font-family:var(--fd);font-size:2.2rem;font-weight:800;color:var(--p);line-height:1;}
+.fas-num span{font-size:1.4rem;}
+.fas-txt{font-family:var(--fd);font-size:.78rem;font-weight:700;color:var(--p);text-align:center;line-height:1.4;}
+
+/* WA */
+.wa{position:fixed;bottom:2rem;right:2rem;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;z-index:999;box-shadow:0 4px 20px rgba(37,211,102,.45);transition:transform .3s;}
+.wa:hover{transform:scale(1.1);}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .sobre-intro{grid-template-columns:1fr;gap:3rem;}
+  .team-photo-wrap{max-width:420px;margin:0 auto;}
+  .s-kpis{grid-template-columns:1fr 1fr;}
+  .sol-layout{grid-template-columns:1fr;}.sol-photo{display:none;}
+  .sol-grid{grid-template-columns:1fr 1fr;}
+  .tcards{grid-template-columns:1fr 1fr;}
+  .wkgrid{grid-template-columns:1fr 1fr;}
+  .dg{grid-template-columns:1fr 1fr;}
+  .fhead{grid-template-columns:1fr;}.fdesc{text-align:left;}
+  .bento-main{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+  .bento-main .fg-wide{grid-column:1/3;height:240px;}
+  .bento-main .fg{height:200px;}
+  .bento-strip{grid-template-columns:1fr 1fr;}.bento-strip .fg{height:185px;}
+  .fg2{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  .nl{display:none;}.nl.open{display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:#fff;padding:1.5rem 2rem;box-shadow:0 8px 24px rgba(45,41,82,.12);gap:1.25rem;z-index:999;}
+  .nl.open a{color:var(--p)!important;font-size:1rem;opacity:1!important;}
+  .ntog{display:flex;}
+  .hh1{font-size:2.1rem;}.hst{gap:1.5rem;}
+  .cg,.wkgrid,.tcards,.dg{grid-template-columns:1fr;}
+  .s-kpis{grid-template-columns:1fr 1fr;}
+  .sol-grid{grid-template-columns:1fr;}
+  .bento-main{grid-template-columns:1fr;}
+  .bento-main .fg-wide{grid-column:auto;height:220px;}
+  .bento-main .fg{height:190px;}
+  .bento-strip{grid-template-columns:1fr 1fr;}.bento-strip .fg{height:170px;}
+  .fg2{grid-template-columns:1fr;gap:2rem;}
 }
 </style>
 </head>
 <body>
 
-<!-- ============================================================
-     NAV
-     ============================================================ -->
+<!-- NAV -->
 <nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#home" class="logo">
-      <span class="logo-text">des com plique</span><span class="logo-dot">.</span>
-    </a>
-    <button class="ntog" id="navBtn" aria-label="Menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+  <div class="wrap nav-inner">
+    <a href="#home" class="logo-nav"><span class="lw">descomplique</span><span class="ld">.</span></a>
+    <button class="ntog" id="navBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nl" id="navMenu">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#solucoes">Soluções</a></li>
-      <li><a href="#treinamentos">Treinamentos</a></li>
-      <li><a href="#diferenciais">Diferenciais</a></li>
-      <li><a href="#clientes">Clientes</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contato" class="ncta">Fale Conosco</a></li>
+      <li><a href="#sobre">Sobre</a></li><li><a href="#solucoes">Soluções</a></li>
+      <li><a href="#treinamentos">Treinamentos</a></li><li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#clientes">Clientes</a></li><li><a href="#contato" class="ncta">Fale Conosco</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ============================================================
-     HERO — SPLIT SCREEN
-     ============================================================ -->
+<!-- HERO -->
 <section class="hero" id="home">
-  <!-- Lado esquerdo: conteúdo -->
-  <div class="hero-left">
-    <div class="hero-blob"></div>
-    <div class="htag">
-      <span class="htag-dot"></span>
-      Rio Claro &amp; Região — 20 anos de experiência
-    </div>
-    <h1 class="hh1">
-      Estratégia em<br><em>Pessoas</em> e<br>Negócios
-    </h1>
-    <p class="hsub">Consultoria especializada para médias e pequenas empresas. Processos estruturados, liderança desenvolvida, resultados reais.</p>
-    <div class="hctas">
-      <a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site%20da%20Descomplique%20e%20gostaria%20de%20falar%20com%20um%20consultor." class="btn btn-primary" target="_blank" rel="noopener">
-        Fale com um consultor
-      </a>
-      <a href="#solucoes" class="btn btn-secondary">Conheça as soluções</a>
-    </div>
-    <div class="hst">
-      <div class="hst-item">
-        <div class="n">+<span>1.000</span></div>
-        <p>Profissionais treinados</p>
+  <div class="hvid">
+    <video autoplay muted loop playsinline><source src="pablo-palestras.mp4" type="video/mp4"></video>
+    <img class="fb" src="img/treinamento-descomplique.jpg" alt="Treinamento Descomplique">
+  </div>
+  <div class="hov"></div><div class="hblob"></div>
+  <div class="hcont wrap">
+    <div class="hinn">
+      <div class="htag"><div class="htag-d"></div>Descomplique · Estratégia em Pessoas e Negócios</div>
+      <h1 class="hh1">Descomplique a gestão de <em>pessoas</em> e <em>negócios</em></h1>
+      <p class="hsub">Consultoria especializada para médias empresas — estratégia, estrutura e experiência de quem transformou dezenas de organizações.</p>
+      <div class="hctas">
+        <a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site." class="btnG" target="_blank" rel="noopener">Fale com um consultor</a>
+        <a href="#solucoes" class="btnGh">Conhecer soluções</a>
       </div>
-      <div class="hst-item">
-        <div class="n">+<span>10k</span></div>
-        <p>Horas de treinamento</p>
-      </div>
-      <div class="hst-item">
-        <div class="n"><span>20</span></div>
-        <p>Anos de experiência</p>
+      <div class="hst">
+        <div><div class="n">20<em>+</em></div><div class="l">anos de experiência</div></div>
+        <div><div class="n">30<em>+</em></div><div class="l">empresas atendidas</div></div>
+        <div><div class="n">1 mil<em>+</em></div><div class="l">profissionais treinados</div></div>
       </div>
     </div>
   </div>
-
-  <!-- Lado direito: vídeo com fallback para foto -->
-  <div class="hero-right">
-    <div class="hero-overlay"></div>
-    <video autoplay muted loop playsinline poster="foto_treinamento.jpeg">
-      <source src="video_descomplique.mp4" type="video/mp4">
-    </video>
-    <img class="hero-fallback" src="foto_treinamento.jpeg" alt="Treinamento Descomplique" style="display:none;" id="heroFallback">
-  </div>
+  <div class="scroll-h"><div class="sln"></div><span>scroll</span></div>
 </section>
 
-<!-- ============================================================
-     PROPOSTA DE VALOR
-     ============================================================ -->
-<section class="value-prop" id="valor">
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="s-blob"></div>
   <div class="wrap">
-    <span class="stag">Por que investir em gestão de pessoas?</span>
-    <h2 class="stit">Gestão profissional gera resultados concretos</h2>
-    <div class="value-grid">
-      <div class="value-card">
-        <div class="value-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        </div>
-        <h3>Redução de custos</h3>
-        <p>Evita processos trabalhistas e gastos com rescisões desnecessárias, protegendo o caixa da empresa.</p>
+    <div class="sobre-intro">
+      <div class="stxt">
+        <span class="stag">Quem somos</span>
+        <h2 class="stit">Empresas são feitas de pessoas e para pessoas</h2>
+        <p>Nossa missão é aprimorar a estratégia em pessoas e negócios das médias empresas. Trazemos as melhores práticas do mercado de forma personalizada, facilitando seu dia a dia, otimizando recursos e melhorando resultados.</p>
+        <p>Com 20 anos de experiência em gestão de empresas, conhecemos na prática os principais desafios. A competitividade do mercado exige gestão cada vez mais profissional e estratégica. Não dá para improvisar.</p>
       </div>
-      <div class="value-card">
-        <div class="value-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div class="team-photo-wrap">
+        <div class="team-dot"></div>
+        <div class="team-photo-frame">
+          <img src="img/treinamento-descomplique-pablo-em-a-o.jpg" alt="Treinamento Descomplique — Pablo em ação" style="object-position:center 25%;">
+          <div class="team-badge">
+            <div class="tb-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2D2952" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div class="tb-text"><p>Descomplique em ação</p><span>Treinamentos práticos e personalizados</span></div>
+          </div>
         </div>
-        <h3>Retenção de talentos</h3>
-        <p>Equipe motivada, produtiva e eficiente — reduz o turnover e aumenta o engajamento.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-        </div>
-        <h3>Processos estruturados</h3>
-        <p>Empresas de sucesso têm processos bem definidos. Paramos de improvisar e começamos a crescer.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        </div>
-        <h3>Estratégia validada</h3>
-        <p>Técnicas comprovadas, não intuição ou improviso. As melhores práticas do mercado na sua empresa.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     SOBRE
-     ============================================================ -->
-<section class="about" id="sobre">
-  <div class="about-shape"></div>
-  <div class="wrap">
-    <div class="about-intro">
-      <span class="stag">Quem somos</span>
-      <h2 class="stit">Empresas são feitas de pessoas — e para pessoas</h2>
-      <div class="about-text">
-        <p>Nossa missão é aprimorar a estratégia em pessoas e negócios das médias empresas. Trazemos as melhores práticas do mercado de forma personalizada, facilitando o dia a dia, otimizando recursos e melhorando resultados.</p>
-        <p>Com 20 anos de experiência em gestão, conhecemos na prática os principais desafios. A competitividade do mercado exige gestão cada vez mais profissional e estratégica. Não dá para improvisar.</p>
-      </div>
+    <div class="s-kpis">
+      <div class="kpi"><div class="n">20<span>+</span></div><div class="l">anos de experiência</div></div>
+      
+      <div class="kpi"><div class="n">10 mil<span>h</span></div><div class="l">de treinamentos</div></div>
+      <div class="kpi"><div class="n">1 mil<span>+</span></div><div class="l">profissionais treinados</div></div>
     </div>
-
-    <!-- Foto de treinamento -->
-    <div class="about-photo">
-      <img src="foto_treinamento.jpeg" alt="Pablo em sessão de treinamento — Descomplique">
-      <div class="about-photo-caption">Pablo Beloni em treinamento de liderança — metodologia ativa e dinâmica</div>
-    </div>
-
-    <!-- Consultores -->
-    <div class="consultants">
-      <div class="consultant-card">
-        <div class="consultant-img">
-          <img src="jacqueline.jpg" alt="Jacqueline Boriam Beloni" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="consultant-img-placeholder" style="display:none;">JB</div>
-        </div>
+    <h3 class="cons-title">Nossa equipe</h3>
+    <div class="cg">
+      <div class="cc">
+        <div class="cp"><img src="img/jacqueline-boriam-beloni.jpg" alt="Jacqueline Boriam Beloni"></div>
         <h3>Jacqueline Boriam Beloni</h3>
-        <p class="consultant-role">Especialista em Gestão de Negócios, Inovação e Pessoas</p>
-        <p class="consultant-bio">Economista (UNESP), com MBA em Gestão de Negócios (USP), MBA em Digital Business (USP) e Especialização em Psicologia Organizacional e Gestão de Pessoas (PUC-RS). Mais de 15 anos acompanhando dezenas de organizações.</p>
-        <a href="https://www.linkedin.com/in/jacqueline-boriam-beloni-45180a4a/" target="_blank" rel="noopener" class="consultant-li">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          Ver perfil no LinkedIn
+        <span class="role">Especialista em Gestão de Negócios, Inovação e Pessoas</span>
+        <p class="bio">Economista (UNESP), MBA em Gestão de Negócios e MBA em Digital Business (USP). Especialização em Psicologia Organizacional (PUC-RS). 15+ anos com trajetória no SEBRAE-SP acompanhando mais de 5 mil empresas.</p>
+        <a href="https://www.linkedin.com/in/jacqueline-boriam-beloni-45180a4a/" target="_blank" rel="noopener" class="li">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          Ver no LinkedIn
         </a>
       </div>
-
-      <div class="consultant-card">
-        <div class="consultant-img">
-          <img src="pablo.jpg" alt="Pablo Nascimento Beloni" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="consultant-img-placeholder" style="display:none;">PB</div>
-        </div>
+      <div class="cc">
+        <div class="cp"><img src="img/pablo-nascimento-beloni.jpg" alt="Pablo Nascimento Beloni" style="object-position:center 8%;"></div>
         <h3>Pablo Nascimento Beloni</h3>
-        <p class="consultant-role">Especialista em Gestão de Pessoas e Negócios</p>
-        <p class="consultant-bio">Mestrando em Administração (UNICAMP), Gestor de RH, Psicanalista, Psicopedagogo, Professor Universitário, Palestrante e Mentor. 20 anos em RH — mais de 1.000 profissionais treinados e 10 mil horas aplicadas.</p>
-        <a href="https://www.linkedin.com/in/pablo-nascimento-beloni-1bb6a538/" target="_blank" rel="noopener" class="consultant-li">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          Ver perfil no LinkedIn
+        <span class="role">Especialista em Gestão de Pessoas e Negócios</span>
+        <p class="bio">Mestrando em Administração (UNICAMP), Gestor de RH, Psicanalista, Psicopedagogo, Professor Universitário e Palestrante. 20 anos em RH — mais de 1.000 profissionais treinados e 10 mil horas aplicadas.</p>
+        <a href="https://www.linkedin.com/in/pablo-nascimento-beloni-1bb6a538/" target="_blank" rel="noopener" class="li">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          Ver no LinkedIn
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     SOLUÇÕES
-     ============================================================ -->
+<!-- SOLUÇÕES -->
 <section class="solucoes" id="solucoes">
   <div class="wrap">
     <span class="stag">O que fazemos</span>
     <h2 class="stit">Como podemos ajudar sua empresa</h2>
-    <div class="sol-grid">
-      <div class="sol-card hot"><span class="sbadge">EM ALTA</span><h3>Programas de treinamento para Liderança e equipes</h3></div>
-      <div class="sol-card hot"><span class="sbadge">EM ALTA</span><h3>Plano de Cargos e Salários</h3></div>
-      <div class="sol-card hot"><span class="sbadge">EM ALTA</span><h3>Avaliação de Desempenho</h3></div>
-      <div class="sol-card hot"><span class="sbadge">EM ALTA</span><h3>Pesquisa e Gestão de Clima Organizacional</h3></div>
-      <div class="sol-card hot"><span class="sbadge">EM ALTA</span><h3>Gestão por Competências</h3></div>
-      <div class="sol-card hot"><span class="sbadge">EM ALTA</span><h3>Assessoria e desenvolvimento da equipe interna de RH</h3></div>
-      <div class="sol-card hot"><span class="sbadge">EM ALTA</span><h3>Treinamento de Líderes com foco na nova NR-1</h3></div>
-      <div class="sol-card hot"><span class="sbadge">EM ALTA</span><h3>Apoio na estruturação de projetos e cultura de inovação</h3></div>
-      <div class="sol-card"><h3>Aprimoramento do processo de Recrutamento e Seleção</h3></div>
-      <div class="sol-card"><h3>Revisão das políticas de RH e Departamento Pessoal</h3></div>
-      <div class="sol-card"><h3>Implantação de indicadores de Gestão de Pessoas</h3></div>
-      <div class="sol-card"><h3>Revisão das descrições e responsabilidades dos cargos</h3></div>
-      <div class="sol-card"><h3>Ações para melhoria da comunicação e fluxo entre setores</h3></div>
-      <div class="sol-card"><h3>Palestras para colaboradores sobre temas diversos</h3></div>
-      <div class="sol-card"><h3>Revisão e aprimoramento de processos internos</h3></div>
+    <div class="sol-layout">
+      <div class="sol-grid">
+        <div class="sc dest"><h3>Programas de treinamento para Liderança e equipes</h3></div>
+        <div class="sc dest"><h3>Plano de Cargos e Salários</h3></div>
+        <div class="sc dest"><h3>Avaliação de Desempenho</h3></div>
+        <div class="sc dest"><h3>Pesquisa e Gestão de Clima Organizacional</h3></div>
+        <div class="sc dest"><h3>Gestão por Competências</h3></div>
+        <div class="sc dest"><h3>Assessoria e desenvolvimento da equipe de RH</h3></div>
+        <div class="sc dest"><h3>Treinamento de Líderes — nova NR-1</h3></div>
+        <div class="sc dest"><h3>Apoio em projetos e cultura de inovação</h3></div>
+        <div class="sc dest"><h3>Recrutamento e Seleção</h3></div>
+        <div class="sc dest"><h3>Revisão de políticas de RH</h3></div>
+        <div class="sc dest"><h3>Indicadores de Gestão de Pessoas</h3></div>
+        <div class="sc dest"><h3>Descrições e responsabilidades de cargos</h3></div>
+        <div class="sc dest"><h3>Comunicação e fluxo entre setores</h3></div>
+        <div class="sc dest"><h3>Palestras para colaboradores</h3></div>
+        <div class="sc dest"><h3>Revisão de processos internos</h3></div>
+      </div>
+      <div class="sol-photo">
+        <div class="sol-photo-inner"><img src="img/pablo-interagindo-com-participantes.jpg" alt="Pablo interagindo com participantes"></div>
+        
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     TREINAMENTOS
-     ============================================================ -->
-<section class="training" id="treinamentos">
+<!-- TREINAMENTOS -->
+<section class="treinamentos" id="treinamentos">
   <div class="wrap">
-    <span class="stag">Programas</span>
+    <span class="stag">Portfólio</span>
     <h2 class="stit">Treinamentos sugeridos</h2>
-
-    <div class="methodology">
-      <h3>Nossa metodologia moderna e eficaz</h3>
-      <div class="method-steps">
-        <div class="method-step">
-          <div class="step-num">1</div>
-          <h4>Teoria</h4>
-          <p>Apresentação dos conceitos teóricos sobre os temas abordados</p>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="method-step">
-          <div class="step-num">2</div>
-          <h4>Dinâmicas e Ferramentas Práticas</h4>
-          <p>Aplicação prática com ferramentas para o dia a dia</p>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="method-step">
-          <div class="step-num">3</div>
-          <h4>Reflexão e Ação</h4>
-          <p>Autoavaliação e aplicação prática dos conceitos apresentados</p>
+    <!-- Metodologia com turma de grupo como bg -->
+    <div class="tmeth">
+      <div class="tmeth-bg"><img src="img/turma-descomplique.jpg" alt="Turma Descomplique"></div>
+      <div class="tmeth-content">
+        <h3>Nossa metodologia moderna e eficaz</h3>
+        <div class="msteps">
+          <div class="ms"><div class="msn">1</div><h4>Teoria</h4><p>Conceitos teóricos sobre os temas abordados</p></div>
+          <div class="marr">→</div>
+          <div class="ms"><div class="msn">2</div><h4>Dinâmicas e Ferramentas</h4><p>Aplicação prática com ferramentas para o dia a dia</p></div>
+          <div class="marr">→</div>
+          <div class="ms"><div class="msn">3</div><h4>Reflexão e Ação</h4><p>Autoavaliação e aplicação prática dos conceitos</p></div>
         </div>
       </div>
     </div>
+    <!-- Cards com fotos de cenas de treinamento (grupo/participantes) -->
+    <div class="tcards">
+      <div class="tc">
+        <div class="tc-img"><img src="img/treinamento-lideran-a-na-pr-tica.jpg" alt="Treinamento — Liderança na Prática" style="object-position:center 22%;"></div>
+        <div class="tc-body">
+          <span class="tcd">24h</span>
+          <h3>Liderança na Prática</h3>
+          <p class="tcpub">Para líderes operacionais e futuros líderes</p>
+          <p>Programa completo de desenvolvimento de liderança. Trabalha autoconhecimento, estilos de liderança, comunicação assertiva, gestão de conflitos, feedback eficaz, motivação de equipes e inteligência emocional — tudo aplicado à realidade do dia a dia operacional. Inclui assessment comportamental e plano de ação personalizado.</p>
+        </div>
+      </div>
+      <div class="tc">
+        <div class="tc-img"><img src="img/participantes-em-treinamento-dcpq.jpg" alt="Participantes em treinamento DCPQ" style="object-position:center 15%;"></div>
+        <div class="tc-body">
+          <span class="tcd">16h</span>
+          <h3>Liderança Descomplicada</h3>
+          <p class="tcpub">Para gerentes, coordenadores e supervisores</p>
+          <p>Desenvolvimento acelerado de competências para profissionais em posição de gestão. Combina assessment DISC, liderança situacional, gestão de pessoas por resultados, comunicação entre setores e tomada de decisão. Formato intensivo com foco em aplicação imediata.</p>
+        </div>
+      </div>
+      <div class="tc">
+        <div class="tc-img"><img src="img/programa-descomplique-carreira.jpg" alt="Programa Descomplique Carreira" style="object-position:center 32%;"></div>
+        <div class="tc-body">
+          <span class="tcd">4–8h</span>
+          <h3>Workshops Comportamentais</h3>
+          <p class="tcpub">Para equipes e colaboradores de todos os níveis</p>
+          <p>Programas modulares focados em competências específicas: habilidades comportamentais, comunicação descomplicada, inteligência emocional, gestão de conflitos, negociação e produtividade. Cada workshop pode ser contratado isoladamente ou combinado em trilha personalizada para sua empresa.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Workshops SEM FOTO — grid elegante com ícones -->
+    
+  </div>
+</section>
 
-    <div class="training-grid">
-      <div class="tr-card">
-        <span class="tr-dur">24h</span>
-        <h3>Liderança na Prática</h3>
-        <p class="tr-audience">Para líderes operacionais e futuros líderes</p>
-        <p>Programa completo que aborda liderança situacional, comunicação assertiva, gestão de processos, inteligência emocional e ferramentas práticas. O participante sai com clareza do seu estilo de liderança e um plano de desenvolvimento individual.</p>
+<!-- GALERIA — 14 fotos todas únicas -->
+<section class="fotos">
+  <div class="wrap">
+    <div class="fhead">
+      <div><span class="stag">Experiência em campo</span><h2 class="stit stit-w" style="margin-bottom:0;">Presença real.<br>Resultados reais.</h2></div>
+      <p class="fdesc">Cada treinamento transforma pessoas e organizações. Estas são as histórias que nos movem todos os dias.</p>
+    </div>
+
+    <!-- Bento principal: público (wide) + pablo close -->
+    <div class="bento-main">
+      <div class="fg fg-wide" style="height:280px;">
+        <img src="img/treinamento-descomplique.jpg" alt="Treinamento — sala cheia" style="object-position:center 40%;">
+        <div class="fc">Treinamento de Liderança — turma completa</div>
       </div>
-      <div class="tr-card">
-        <span class="tr-dur">16h</span>
-        <h3>Liderança Descomplicada</h3>
-        <p class="tr-audience">Para gerentes, coordenadores e supervisores</p>
-        <p>Programa estratégico para líderes em posição de gestão. Inclui assessment comportamental, análise de perfil, gestão de equipes de alta performance e desenvolvimento de processos estratégicos.</p>
+      <div class="fg" style="height:280px;">
+        <img src="img/pablo-spagnhol-palestra.jpg" alt="Pablo Spagnhol — palestra" style="object-position:center 18%;">
+        <div class="fc">Liderança com presença e impacto</div>
       </div>
-      <div class="tr-card">
-        <span class="tr-dur">4h cada</span>
-        <h3>Workshops Comportamentais</h3>
-        <p class="tr-audience">Para equipes e colaboradores de todos os níveis</p>
-        <p>Módulos práticos sobre comunicação descomplicada, gestão de conflitos, inteligência emocional, negociação e produtividade. Podem ser aplicados isoladamente ou em sequência programática.</p>
+      <div class="fg" style="height:230px;">
+        <img src="img/coffee-break-e-networking.jpg" alt="Coffee break e networking" style="object-position:center 30%;">
+        <div class="fc">Networking — intervalo do treinamento</div>
+      </div>
+      <div class="fg" style="height:230px;">
+        <img src="img/treinamento-descomplique-pablo-em-a-o.jpg" alt="Pablo — atendimento individual DCPQ" style="object-position:center 22%;">
+        <div class="fc">Programa DCPQ — atenção individualizada</div>
+      </div>
+      <div class="f-acc" style="height:230px;">
+        <div class="fn">+30</div>
+        <div class="ft">empresas<br>atendidas</div>
+      </div>
+    </div>
+
+    <!-- Strip: público anotando + pablo mesa + stat -->
+    <div class="bento-strip">
+      <div class="f-acc-sm">
+        <div class="fas-num">10 mil<span>h</span></div>
+        <div class="fas-txt">horas de<br>treinamento</div>
+      </div>
+      <div class="fg">
+        <img src="img/participantes-atentos-ao-treinamento.jpg" alt="Participantes atentos ao treinamento" style="object-position:center 38%;">
+        <div class="fc">Engajamento — participantes ativos</div>
+      </div>
+      <div class="fg">
+        <img src="img/pablo-consultoria-individual-na-mesa.jpg" alt="Pablo — consultoria individual na mesa" style="object-position:center 20%;">
+        <div class="fc">Consultoria in loco — presença real</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     DIFERENCIAIS
-     ============================================================ -->
+<!-- DIFERENCIAIS -->
 <section class="diferenciais" id="diferenciais">
   <div class="wrap">
     <span class="stag">Por que nos escolher</span>
-    <h2 class="stit">Os diferenciais da Descomplique</h2>
-    <div class="diff-grid">
-      <div class="diff-card">
-        <div class="diff-num">01</div>
-        <h3>Equipe <em>ESPECIALISTA</em></h3>
-        <p>Especialistas em gestão de pessoas em médias e pequenas empresas. Colocamos a mão na massa para o resultado acontecer.</p>
-      </div>
-      <div class="diff-card">
-        <div class="diff-num">02</div>
-        <h3>Investimento <em>JUSTO</em></h3>
-        <p>Preços compatíveis com a realidade e capacidade de investimento das PMEs.</p>
-      </div>
-      <div class="diff-card">
-        <div class="diff-num">03</div>
-        <h3>Consultoria <em>MODERNA</em></h3>
-        <p>As melhores e mais recentes práticas de RH do mercado, aplicadas à sua realidade.</p>
-      </div>
-      <div class="diff-card">
-        <div class="diff-num">04</div>
-        <h3>Projetos <em>PERSONALIZADOS</em></h3>
-        <p>Construímos a solução que a sua empresa realmente precisa — sem pacotes genéricos.</p>
-      </div>
+    <h2 class="stit">Por que escolher a Descomplique?</h2>
+    <div class="dg">
+      <div class="dc"><div class="dn">01</div><h3>Equipe <em>ESPECIALISTA</em></h3><p>Especialistas em gestão de pessoas para médias empresas. Colocamos a mão na massa para o resultado acontecer.</p></div>
+      <div class="dc"><div class="dn">02</div><h3>Investimento <em>JUSTO</em></h3><p>Compatível com a capacidade de investimento das médias empresas — sem cobrar como grande consultoria.</p></div>
+      <div class="dc"><div class="dn">03</div><h3>Consultoria <em>MODERNA</em></h3><p>As melhores e mais recentes práticas de RH do mercado aplicadas à sua realidade.</p></div>
+      <div class="dc"><div class="dn">04</div><h3>Projetos <em>PERSONALIZADOS</em></h3><p>Construímos a solução que sua empresa precisa — não templates genéricos.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     DEPOIMENTOS
-     ============================================================ -->
-<section class="testimonials">
+<!-- DEPOIMENTOS -->
+<section class="depoimentos">
   <div class="wrap">
-    <h2 class="stit" style="text-align:center;">O que nossos clientes dizem</h2>
-    <div class="test-grid">
-      <div class="test-card">
-        <div class="test-quote">"</div>
-        <p class="test-text">Foi um treinamento muito útil não só para o crescimento profissional, mas também para o pessoal. A didática do professor é muito boa.</p>
-        <p class="test-author">— Supervisor, Ecoprimos</p>
-      </div>
-      <div class="test-card">
-        <div class="test-quote">"</div>
-        <p class="test-text">Foi gratificante e com certeza saí modificada e motivada.</p>
-        <p class="test-author">— Coordenadora, Estrutura Dinâmica</p>
-      </div>
-      <div class="test-card">
-        <div class="test-quote">"</div>
-        <p class="test-text">Treinamento superou todas as expectativas, fora do normal!</p>
-        <p class="test-author">— Analista, Strufaldi</p>
-      </div>
-      <div class="test-card">
-        <div class="test-quote">"</div>
-        <p class="test-text">Aprendi muito e vou levar para minha vida como um todo. Professor muito didático, dosando teoria e prática na medida certa.</p>
-        <p class="test-author">— Coordenadora de Compras, TanksBr</p>
-      </div>
+    <span class="stag" style="display:block;text-align:center;">O que dizem</span>
+    <h2 class="stit stit-w" style="text-align:center;">Resultados que falam por si</h2>
+    <div class="depg">
+      <div class="dep"><div class="dq">"</div><p class="dt">Foi um treinamento muito útil não só para o crescimento profissional, mas também para o pessoal. A didática do professor é muito boa.</p><p class="da">— Supervisor, Ecoprimos</p></div>
+      <div class="dep"><div class="dq">"</div><p class="dt">Foi gratificante e com certeza saí modificada e motivada. Vai além do que esperava de um treinamento corporativo.</p><p class="da">— Coordenadora, Estrutura Dinâmica</p></div>
+      <div class="dep"><div class="dq">"</div><p class="dt">Treinamento superou todas as expectativas, fora do normal! Prático, dinâmico e com conteúdo real.</p><p class="da">— Analista, Strufaldi</p></div>
+      <div class="dep"><div class="dq">"</div><p class="dt">Aprendi muito e vou levar para minha vida como um todo. Professor muito didático, dosando teoria e prática.</p><p class="da">— Coordenadora de Compras, TanksBR</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     CLIENTES
-     ============================================================ -->
+<!-- CLIENTES -->
 <section class="clientes" id="clientes">
-  <div class="wrap">
-    <span class="stag">Quem confia na Descomplique</span>
-    <h2 class="stit">Empresas que já descomplicaram</h2>
-    <div class="clients-grid">
-      <div class="client-badge">Solo</div>
-      <div class="client-badge">Chemson</div>
-      <div class="client-badge">Casa do Construtor</div>
-      <div class="client-badge">Villagres</div>
-      <div class="client-badge">GRHRC</div>
-      <div class="client-badge">Sindhostil</div>
-      <div class="client-badge">Ethimos</div>
-      <div class="client-badge">Vestra</div>
-      <div class="client-badge">TanksBR</div>
-      <div class="client-badge">Ecoprimos</div>
-      <div class="client-badge">Aspacer</div>
-      <div class="client-badge">DPV</div>
-      <div class="client-badge">Spine Implantes</div>
-      <div class="client-badge">CCB</div>
-      <div class="client-badge">Bocão</div>
-      <div class="client-badge">CBB</div>
-      <div class="client-badge">Luizzi</div>
-      <div class="client-badge">Alcloro</div>
-      <div class="client-badge">Tubopartes</div>
-      <div class="client-badge">Supra</div>
-      <div class="client-badge">Bioset</div>
-      <div class="client-badge">Strufaldi</div>
-      <div class="client-badge">Spagnhol</div>
-      <div class="client-badge">Santa Filomena</div>
-      <div class="client-badge">Fischer</div>
-      <div class="client-badge">Haggai</div>
-      <div class="client-badge">Víncula</div>
-      <div class="client-badge">Estrutura Dinâmica</div>
-      <div class="client-badge">APAE</div>
+  <div class="wrap"><span class="stag">Portfólio de clientes</span><h2 class="stit">Empresas que confiam na Descomplique</h2></div>
+  <div class="clientes-inner">
+    <div class="cl-track">
+      <div class="cl-item"><img src="img/chemson.png" alt="Chemson"></div><div class="cl-item"><img src="img/casa-do-construtor.png" alt="Casa do Construtor"></div>
+      <div class="cl-item"><img src="img/villagres.png" alt="Villagres"></div><div class="cl-item"><img src="img/grhrc.png" alt="GRHRC"></div>
+      <div class="cl-item"><img src="img/sindhosfil.png" alt="Sindhosfil"></div><div class="cl-item"><img src="img/ethimos.png" alt="Ethimos"></div>
+      <div class="cl-item"><img src="img/vestra.png" alt="Vestra"></div><div class="cl-item"><img src="img/tanksbr.png" alt="TanksBR"></div>
+      <div class="cl-item"><img src="img/ecoprimos.png" alt="Ecoprimos"></div><div class="cl-item"><img src="img/aspacer.png" alt="Aspacer"></div>
+      <div class="cl-item"><img src="img/dpv.png" alt="DPV"></div><div class="cl-item"><img src="img/spine-implantes.png" alt="Spine Implantes"></div>
+      <div class="cl-item"><img src="img/cbb.png" alt="CBB"></div>
+      <div class="cl-item"><img src="img/chemson.png" alt="Chemson"></div><div class="cl-item"><img src="img/casa-do-construtor.png" alt="Casa do Construtor"></div>
+      <div class="cl-item"><img src="img/villagres.png" alt="Villagres"></div><div class="cl-item"><img src="img/grhrc.png" alt="GRHRC"></div>
+      <div class="cl-item"><img src="img/sindhosfil.png" alt="Sindhosfil"></div><div class="cl-item"><img src="img/ethimos.png" alt="Ethimos"></div>
+      <div class="cl-item"><img src="img/vestra.png" alt="Vestra"></div><div class="cl-item"><img src="img/tanksbr.png" alt="TanksBR"></div>
+      <div class="cl-item"><img src="img/ecoprimos.png" alt="Ecoprimos"></div><div class="cl-item"><img src="img/aspacer.png" alt="Aspacer"></div>
+      <div class="cl-item"><img src="img/dpv.png" alt="DPV"></div><div class="cl-item"><img src="img/spine-implantes.png" alt="Spine Implantes"></div>
+      <div class="cl-item"><img src="img/cbb.png" alt="CBB"></div>
+    </div>
+    <div class="cl-track cl-track-2">
+      <div class="cl-item"><img src="img/boc-o.png" alt="Bocão"></div><div class="cl-item"><img src="img/solo.png" alt="Solo"></div>
+      <div class="cl-item"><img src="img/bioset.png" alt="Bioset"></div><div class="cl-item"><img src="img/strufaldi.png" alt="Strufaldi"></div>
+      <div class="cl-item"><img src="img/spagnhol.png" alt="Spagnhol"></div><div class="cl-item"><img src="img/santa-filomena.png" alt="Santa Filomena"></div>
+      <div class="cl-item"><img src="img/fischer.png" alt="Fischer"></div><div class="cl-item"><img src="img/haggai.png" alt="Haggai"></div>
+      <div class="cl-item"><img src="img/v-ncula.png" alt="Víncula"></div><div class="cl-item"><img src="img/estrutura-din-mica.png" alt="Estrutura Dinâmica"></div>
+      <div class="cl-item"><img src="img/apae.png" alt="APAE"></div><div class="cl-item"><img src="img/supra.png" alt="Supra"></div>
+      <div class="cl-item"><img src="img/tubopartes.png" alt="Tubopartes"></div>
+      <div class="cl-item"><img src="img/boc-o.png" alt="Bocão"></div><div class="cl-item"><img src="img/solo.png" alt="Solo"></div>
+      <div class="cl-item"><img src="img/bioset.png" alt="Bioset"></div><div class="cl-item"><img src="img/strufaldi.png" alt="Strufaldi"></div>
+      <div class="cl-item"><img src="img/spagnhol.png" alt="Spagnhol"></div><div class="cl-item"><img src="img/santa-filomena.png" alt="Santa Filomena"></div>
+      <div class="cl-item"><img src="img/fischer.png" alt="Fischer"></div><div class="cl-item"><img src="img/haggai.png" alt="Haggai"></div>
+      <div class="cl-item"><img src="img/v-ncula.png" alt="Víncula"></div><div class="cl-item"><img src="img/estrutura-din-mica.png" alt="Estrutura Dinâmica"></div>
+      <div class="cl-item"><img src="img/apae.png" alt="APAE"></div><div class="cl-item"><img src="img/supra.png" alt="Supra"></div>
+      <div class="cl-item"><img src="img/tubopartes.png" alt="Tubopartes"></div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     BLOG
-     ============================================================ -->
-<section class="blog" id="blog">
-  <div class="wrap">
-    <span class="stag">Conteúdo gratuito</span>
-    <h2 class="stit">Conteúdos sobre gestão</h2>
-    <div class="blog-grid">
-      <article class="blog-card">
-        <div class="blog-img"><span class="blog-badge">Em Breve</span></div>
-        <div class="blog-body">
-          <h3>Como estruturar um processo de Recrutamento e Seleção eficiente</h3>
-          <p>Em breve: conteúdo completo sobre este tema</p>
-        </div>
-      </article>
-      <article class="blog-card">
-        <div class="blog-img"><span class="blog-badge">Em Breve</span></div>
-        <div class="blog-body">
-          <h3>5 erros comuns na gestão de equipes em PMEs</h3>
-          <p>Em breve: conteúdo completo sobre este tema</p>
-        </div>
-      </article>
-      <article class="blog-card">
-        <div class="blog-img"><span class="blog-badge">Em Breve</span></div>
-        <div class="blog-body">
-          <h3>Plano de Cargos e Salários: por onde começar?</h3>
-          <p>Em breve: conteúdo completo sobre este tema</p>
-        </div>
-      </article>
-      <article class="blog-card">
-        <div class="blog-img"><span class="blog-badge">Em Breve</span></div>
-        <div class="blog-body">
-          <h3>Clima organizacional: como medir e melhorar resultados</h3>
-          <p>Em breve: conteúdo completo sobre este tema</p>
-        </div>
-      </article>
-      <article class="blog-card">
-        <div class="blog-img"><span class="blog-badge">Em Breve</span></div>
-        <div class="blog-body">
-          <h3>Liderança na prática: ferramentas para o dia a dia</h3>
-          <p>Em breve: conteúdo completo sobre este tema</p>
-        </div>
-      </article>
-      <article class="blog-card">
-        <div class="blog-img"><span class="blog-badge">Em Breve</span></div>
-        <div class="blog-body">
-          <h3>Nova NR-1: o que os líderes precisam saber agora</h3>
-          <p>Em breve: conteúdo completo sobre este tema</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     CONTATO
-     ============================================================ -->
+<!-- CONTATO -->
 <section class="contato" id="contato">
-  <div class="contato-blob"></div>
-  <div class="wrap">
-    <div class="contato-inner">
-      <span class="stag" style="background:rgba(57,255,20,.15);">Vamos conversar</span>
-      <h2 class="stit">Vamos descomplicar a gestão da sua empresa?</h2>
-      <p class="contato-sub">Entre em contato e descubra como podemos ajudar sua empresa a crescer com uma gestão de pessoas estruturada e estratégica.</p>
-
-      <div class="contato-info">
-        <div class="contato-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="https://wa.me/5519996655163" target="_blank" rel="noopener">(19) 99665-5163</a>
-        </div>
-        <div class="contato-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          <a href="https://instagram.com/descompliquerh" target="_blank" rel="noopener">@descompliquerh</a>
-        </div>
-        <div class="contato-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Rio Claro — SP</span>
-        </div>
-      </div>
-
-      <a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site%20da%20Descomplique%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços.%0A%0AMinha%20empresa%20é%20do%20ramo%20[____]%20e%20temos%20[____]%20colaboradores.%0A%0AQual%20o%20próximo%20passo?"
-         class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-        Agendar conversa via WhatsApp
-      </a>
+  <div class="cblob"></div>
+  <div class="wrap cinn">
+    <span class="stag" style="display:block;text-align:center;">Contato</span>
+    <h2 class="stit" style="text-align:center;">Vamos descomplicar a gestão da sua empresa?</h2>
+    <p>Entre em contato e descubra como podemos ajudar sua empresa a crescer com uma gestão de pessoas estruturada e estratégica.</p>
+    <div class="cinf">
+      <div class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="https://wa.me/5519996655163" target="_blank" rel="noopener">(19) 99665-5163</a></div>
+      <div class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg><a href="https://instagram.com/descompliquerh" target="_blank" rel="noopener">@descompliquerh</a></div>
+      <div class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rio Claro — SP</span></div>
     </div>
+    <a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site%20da%20Descomplique." class="btnG" target="_blank" rel="noopener">Agendar conversa via WhatsApp</a>
   </div>
 </section>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="logo"><span class="logo-text">des com plique</span><span class="logo-dot">.</span></div>
-        <p class="footer-tagline">estratégia em pessoas e negócios</p>
-      </div>
-      <nav>
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#solucoes">Soluções</a></li>
-          <li><a href="#treinamentos">Treinamentos</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-      <div class="footer-social">
-        <h4>Redes Sociais</h4>
-        <a href="https://instagram.com/descompliquerh" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.linkedin.com/company/descomplique-gest%C3%A3o-de-pessoas-e-carreira/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://wa.me/5519996655163" target="_blank" rel="noopener">WhatsApp</a>
-      </div>
+<!-- FOOTER -->
+<footer>
+  <div class="wrap fg2">
+    <div><img src="img/descomplique.png" alt="Descomplique" class="flogo">
+      <p style="color:#39FF14;font-family:var(--fd);font-size:.82rem;font-weight:400;margin-top:.25rem;letter-spacing:.02em;">estratégia em pessoas e negócios</p></div>
+    <div>
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li><li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#treinamentos">Treinamentos</a></li><li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#clientes">Clientes</a></li><li><a href="#contato">Contato</a></li>
+      </ul>
     </div>
-    <hr class="footer-divider">
-    <p class="footer-copy">© 2026 Descomplique. Todos os direitos reservados. Rio Claro — SP</p>
+    <div>
+      <h4>Redes Sociais</h4>
+      <ul>
+        <li><a href="https://instagram.com/descompliquerh" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/company/descomplique-gest%C3%A3o-de-pessoas-e-carreira/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://wa.me/5519996655163" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
   </div>
+  <div class="fdiv"></div>
+  <p class="fcopy">© 2026 Descomplique. Todos os direitos reservados. Rio Claro — SP</p>
 </footer>
 
-<!-- WA Float -->
-<a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site%20da%20Descomplique." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+<a href="https://wa.me/5519996655163?text=Olá!%20Vim%20pelo%20site%20da%20Descomplique." class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
 <script>
-// Nav scroll
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => nav.classList.toggle('solid', window.scrollY > 40), {passive: true});
-
-// Mobile menu
-const btn = document.getElementById('navBtn');
-const menu = document.getElementById('navMenu');
-btn.addEventListener('click', () => {
-  const open = menu.classList.toggle('open');
-  btn.setAttribute('aria-expanded', open);
-});
-menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  menu.classList.remove('open');
-  btn.setAttribute('aria-expanded', 'false');
-}));
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const t = document.querySelector(a.getAttribute('href'));
-    if (t) { e.preventDefault(); window.scrollTo({top: t.offsetTop - 72, behavior: 'smooth'}); }
-  });
-});
-
-// Video fallback
-const vid = document.querySelector('.hero-right video');
-const fallback = document.getElementById('heroFallback');
-if (vid) {
-  vid.addEventListener('error', () => {
-    vid.style.display = 'none';
-    if (fallback) fallback.style.display = 'block';
-  });
-}
-
-// Fade-in on scroll
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
-  });
-}, {threshold: 0.1, rootMargin: '0px 0px -40px 0px'});
-
-document.querySelectorAll('.value-card,.consultant-card,.sol-card,.tr-card,.diff-card,.test-card,.blog-card,.client-badge').forEach((el, i) => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = `opacity .55s ease ${i * 0.05}s, transform .55s ease ${i * 0.05}s`;
-  observer.observe(el);
-});
-
-console.log('%c🚀 Descomplique', 'font-size:24px;font-weight:bold;color:#39FF14;background:#2D2952;padding:10px;');
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('solid',window.scrollY>40),{passive:true});
+const btn=document.getElementById('navBtn'),menu=document.getElementById('navMenu');
+btn.addEventListener('click',()=>{menu.classList.toggle('open');btn.setAttribute('aria-expanded',menu.classList.contains('open'));});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 </script>
 </body>
 </html>
