@@ -236,9 +236,9 @@ section{padding:5.5rem 0;}
 .ci svg{color:var(--a);flex-shrink:0;}.ci a:hover{color:var(--a);}
 
 /* FOOTER */
-footer{background:#2D2952;padding:3.5rem 0 0;color:#fff;}
+footer{background:#09002B;padding:3.5rem 0 0;color:#fff;}
 .fg2{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;}
-.flogo{width:300px;height:auto;display:block;margin-bottom:1rem;mix-blend-mode:screen;}
+.flogo{width:300px;height:auto;display:block;margin-bottom:1rem;}
 .ftag{color:var(--a);font-size:.875rem;}
 footer h4{font-family:var(--fd);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--a);margin-bottom:1.2rem;}
 footer ul li{margin-bottom:.6rem;}
@@ -313,7 +313,7 @@ footer a:hover{color:var(--a);}
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hvid">
-    <video autoplay muted loop playsinline><source src="pablo-palestras.mp4" type="video/mp4"></video>
+    <video id="heroVid" autoplay muted loop playsinline preload="auto"><source src="pablo-palestras.mp4" type="video/mp4"></video>
     <img class="fb" src="img/treinamento-descomplique.jpg" alt="Treinamento Descomplique">
   </div>
   <div class="hov"></div><div class="hblob"></div>
@@ -361,7 +361,7 @@ footer a:hover{color:var(--a);}
     <div class="s-kpis">
       <div class="kpi"><div class="n">20<span>+</span></div><div class="l">anos de experiência</div></div>
       
-      <div class="kpi"><div class="n">10 mil<span>h</span></div><div class="l">de treinamentos</div></div>
+      <div class="kpi"><div class="n">10 mil</div><div class="l">de treinamentos</div></div>
       <div class="kpi"><div class="n">1 mil<span>+</span></div><div class="l">profissionais treinados</div></div>
     </div>
     <h3 class="cons-title">Nossa equipe</h3>
@@ -510,7 +510,7 @@ footer a:hover{color:var(--a);}
     <!-- Strip: público anotando + pablo mesa + stat -->
     <div class="bento-strip">
       <div class="f-acc-sm">
-        <div class="fas-num">10 mil<span>h</span></div>
+        <div class="fas-num">10 mil</div>
         <div class="fas-txt">horas de<br>treinamento</div>
       </div>
       <div class="fg">
@@ -611,8 +611,8 @@ footer a:hover{color:var(--a);}
 <!-- FOOTER -->
 <footer>
   <div class="wrap fg2">
-    <div><img src="img/descomplique.png" alt="Descomplique" class="flogo">
-      <p style="color:#39FF14;font-family:var(--fd);font-size:.82rem;font-weight:400;margin-top:.25rem;letter-spacing:.02em;">estratégia em pessoas e negócios</p></div>
+    <div><img src="img/descomplique-estrat-gia-em-pessoas-e-neg-cios.png" alt="Descomplique — estratégia em pessoas e negócios" class="flogo">
+      </div>
     <div>
       <h4>Navegação</h4>
       <ul>
@@ -639,6 +639,14 @@ footer a:hover{color:var(--a);}
 </a>
 
 <script>
+// Force video autoplay
+const vid=document.getElementById('heroVid');
+if(vid){
+  vid.play().catch(()=>{});
+  document.addEventListener('click',()=>vid.play().catch(()=>{}),{once:true});
+  document.addEventListener('touchstart',()=>vid.play().catch(()=>{}),{once:true});
+  document.addEventListener('scroll',()=>vid.play().catch(()=>{}),{once:true});
+}
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('solid',window.scrollY>40),{passive:true});
 const btn=document.getElementById('navBtn'),menu=document.getElementById('navMenu');
